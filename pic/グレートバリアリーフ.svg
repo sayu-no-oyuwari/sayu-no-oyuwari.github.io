@@ -1,0 +1,411 @@
+<svg width="3072" height="2400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" overflow="hidden">
+
+<defs>
+
+<linearGradient id="linearGradient174" x1="-3.2" x2="8" y1="637" y2="-521" gradientUnits="userSpaceOnUse">
+	<stop stop-color="#000000" offset="0"/>
+	<stop stop-color="#ffffff" offset="1"/>
+</linearGradient>
+
+<filter id="blurFilter" x="0" y="0">
+	<feGaussianBlur in="SourceGraphic" stdDeviation="20" />
+</filter>
+
+<filter id="blurFilter2" x="0" y="0">
+	<feGaussianBlur in="SourceGraphic" stdDeviation="100 10" />
+</filter>
+
+<filter id="blurFilter3" x="0" y="0">
+	<feGaussianBlur in="SourceGraphic" stdDeviation="3" />
+</filter>
+
+<filter id="blurFilter_S" x="0" y="0">
+	<feGaussianBlur in="SourceGraphic" stdDeviation="2.5" />
+</filter>
+
+<filter id="blurFilter_T">
+	<feGaussianBlur stdDeviation="0 200" />
+</filter>
+
+<filter id="blurFilter_B">
+	<feGaussianBlur stdDeviation="50 0" />
+</filter>
+
+<filter id="waterEffect">
+	<feTurbulence id="turbulence" type="fractalNoise" baseFrequency="0.05" numOctaves="3" result="turbulence">
+		<animate id="Hamon1" attributeName="baseFrequency" from="0.02" to="0.01" dur="10s" begin="Start.end+0s;Hamon2.end+0s" fill="freeze"/>
+		<animate id="Hamon2" attributeName="baseFrequency" from="0.01" to="0.02" dur="10s" begin="Hamon1.end+0s" fill="freeze"/>
+	</feTurbulence>
+		<feDisplacementMap in="SourceGraphic" in2="turbulence" scale="30" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+	
+<filter id="waterEffect_L">
+	<feTurbulence id="turbulence" type="fractalNoise" baseFrequency="500" numOctaves="50" result="turbulence">
+		<animate id="anim1" attributeName="baseFrequency" from="0.02" to="0.01" dur="20s" begin="0s;anim2.end" fill="freeze"/>
+		<animate id="anim2" attributeName="baseFrequency" from="0.01" to="0.02" dur="20s" begin="anim1.end" fill="freeze"/>
+	</feTurbulence>
+	<feDisplacementMap in="SourceGraphic" in2="turbulence" scale="30" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+
+	<linearGradient id="seaGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+		<stop offset="0%" style="stop-color:#3659A7;stop-opacity:1" />
+		<stop offset="5%" style="stop-color:#0080AE;stop-opacity:1" />
+		<stop offset="30%" style="stop-color:#00B2C4;stop-opacity:1" />
+		<stop offset="60%" style="stop-color:#94D0C9;stop-opacity:1" />
+	</linearGradient>
+
+<!--水面-->
+
+
+
+
+<path id="Hamon_path" d="m0 0v65c0.64-0.1 20-1.9 55-1.9 35 0 60-26 83-32 6-1.5 12-2.1 19-2 20 0.3 42 7.8 52 22 14 19-4 16-13 39-8 22 9 30 13 57 5 27-30 38-42 44-11 5-36-14-54-30-17-15-44-10-78-16-20-4-31-7-35-10v15c5 2 124 35 134 48 11 12 20 37 0 38-19 1-18-9-42-11-23-3-72 12-92 5v30c6.5 2 32-6 49-12 17-6 36-3 51-2 17 0 40 25 58 71 14 36 24 61 6 88-19 26-49 55-83 55-29 0-69-15-81-20v45c7.9 1 68-15 88-3 29 17 34 72 37 95 4 37-21 69-44 83-32 22-52 12-81-10v30c19 2 50-8 64 20 13 25 11 40 0 50-37 34-43 13-64 0v20c18 9 30 3 40 11 15 11 9.9 31-8.3 33-17 1-31 0-31 1v40c4.8-4 29-25 37-25 22 5 12 59 1 80-11 21-38 22-38 30v20l36-1s6.5-52 22-54c44-6 79 10 99 24s23 31 23 31h90c-9-2-49-12-37-24 17-18 80-77 162-97 35-9 199 10 198 51-2 62-56 50-83 70l55-1s28-20 51-49c21-26-1-41 48-43 23-1 50 3 65 24 10 19 17 45-5 62-5 4-10 6-14 7h250v-20c-43 1-108 7-156 0-55-7-62-56-24-81 38-26 180-4 180-4v-625s-55 3-45-57c11-59 45-13 45-23v-15c-27 15-40-20-42-36 0-17 7-44 42-34v-65h-204c21 6.6 44 8.3 74 9.9 30 1.7 48-15 63 6.6 15 22 33 28 12 56-14 18 10 26 8 58-5 79-142 132-194 79-28-65-31-80-29-112 4-75 66-98 66-98h-46c-11 11-30 31-50 46-27 20-5 35-8 41-44 33-114 35-139-8.2-16-29 0-20 21-45 15-16 23-27 31-35h-54s-13 22-31 26c-19 4.9-210-25-210-25l240-1.6h-330c-41 28-74 33-124 52-64 13-20-52-20-52zm262 32c36-23 165-0.7 186 6.9 48 17 45 39 53 69 6 22-30 61-55 74-24 13-152-3-175-3-74-62-59-84-9-147zm398 94c33 22 17 66 24 97 20 70-128 148-138 152-37 16-54-1-85-27-32-26-47-23-51-59-7-60 115-152 119-154 33-11 108-25 131-9zm-419 84h2c23 3 114-10 139 20 23 28-10 42 8 78 15 31 27 34 28 52 2 19 4 62-26 65s-81-23-117-35c-37-11-90-43-98-69-8-27-18-66-18-66 3-16 57-46 82-45zm669 17c13 19 53 54 8 72-45 17-121-37-108-53s84-40 100-19zm-184 6c26-3 80 44 88 50 10 8 90 38 16 57-71-19-167-32-145-51 27-23-7-49 41-56zm234 27v180h-55c-37 0-43-17-48-58-5-42 28-45 61-64 33-20 34-46 42-58zm-282 68c21-8 80 3 101 20 41 35 43 0 59 36 11 24-33 118-67 134-36 16-204-32-221-61-32-57 82-114 128-129zm-158 96c14 26-7 28-7 54 0 33 223 47 239 72 17 24 43 70 35 102-8 31-61 137-91 137s-101-12-111-37c-10-24-16-44-39-59s-129-5-183-24c-34-11-41-46-43-69-5-61 90-122 114-179 23-58 68-29 86 3zm-306-24c51-2 109-4 142 63 11 41-43 70-71 124-131 17-142-11-159-76-16-59 23-73 88-111zm644 49c38-4 68 23 102 36v165s-3 2-29 0-112-21-134-55c-20-32-1-78 11-87 18-12 34-57 50-59zm-648 156c38 1 59 0 74 16 31 32 55 43 38 61-27 29 10 50-8 57-28 10-112-10-137-28s-53-15-56-41c-4-27 29-58 29-58 15-4 37-7 60-7zm670 48c24 0 80 27 80 27v70s-33-24-65-32-110 19-97-34 51-31 82-31zm-527 39c56 0 168-2 193 32 29 52-119 51-139 48-57-9-110-80-54-80zm-122 59c28 6 103 6 121 15 18 8 18 33 10 53-6 15-82 72-163 97-49 15-108-33-108-33s-22-23-18-50c3.3-26-3.4-99 31-124 31-21 93 33 127 42zm551-17c45-8 96-1 111 7 20 10 67 29 67 29v45s-115 15-150 17c-34 1-63 20-81-2-20-23 38-93 53-96zm-241 38s84 10 104 24c19 13 60 17 59 40-2 23-76 19-104 19s-82-31-124-30c-41 2-64-5-61-20s94-33 126-33z"
+	fill="#000000" stroke-width="0" transform="scale(1, 0.5)"/>
+
+<pattern id="Hamon_Extra" width="960" height="480" patternUnits="userSpaceOnUse" >
+	<use href="#Hamon_path" xlink:href="#Hamon_path" opacity="0.5" >
+	</use>
+	<use href="#Hamon_path" xlink:href="#Hamon_path" filter="url(#blurFilter)" opacity="0.5" >
+	</use>
+</pattern>
+
+	<linearGradient id="seaGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+		<stop offset="2%" style="stop-color:#94D0C9;stop-opacity:1" />
+		<stop offset="23%" style="stop-color:#00B2C4;stop-opacity:1" />
+		<stop offset="40%" style="stop-color:#3659A7;stop-opacity:1" />
+	</linearGradient>
+	
+<linearGradient id="linearGradient2" x1="0%" y1="0%" x2="0%" y2="100%" gradientUnits="userSpaceOnUse">
+	<stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1"/>
+	<stop offset="80%" style="stop-color:#000000;stop-opacity:1"/>
+</linearGradient>	
+
+
+<mask id="Hamon_kei">
+<rect x="0" y="96" width="3072" height="960" fill="#000000" />
+	<path d="M 175,82.1 C 123,251 389,229 541,345 938,489 272,761 743,788 901,854 1410,934 1810,931 2220,928 1980,729 2060,607 2410,506 2170,389 2510,369 2710,334 3030,202 2970,101 2760,23.4 239,30.2 175,82.1 Z" 
+		fill="url(#linearGradient2)"  filter="url(#blurFilter2)">
+		<animate id="nami_1" attributeName="d" dur="9s" 
+		from="M 175,82.1 C 123,251 389,229 541,345 938,489 272,761 743,788 901,854 1410,934 1810,931 2220,928 1980,729 2060,607 2410,506 2170,389 2510,369 2710,334 3030,202 2970,101 2760,23.4 239,30.2 175,82.1 Z" 
+		by="M 175,82.1 C 123,251 665,280 817,396 643,648 754,773 1230,800 1570,792 1190,934 1590,931 2290,982 1400,655 1750,588 2100,487 2390,762 2690,482 2890,447 3030,202 2970,101 2760,23.4 239,30.2 175,82.1 Z" 
+		to="M 253,78.2 C 201,247 447,323 599,439 530,640 595,707 1070,734 1410,726 899,926 1300,923 2850,998 1960,783 2310,716 2660,615 2480,614 2780,334 2980,299 2600,272 2890,89.3 2680,11.7 317,26.3 253,78.2 Z" 
+		begin="0s;nami_3.end+0s"/>
+		<animate id="nami_2" attributeName="d" dur="7s" 
+		from="M 253,78.2 C 201,247 447,323 599,439 530,640 595,707 1070,734 1410,726 899,926 1300,923 2850,998 1960,783 2310,716 2660,615 2480,614 2780,334 2980,299 2600,272 2890,89.3 2680,11.7 317,26.3 253,78.2 Z" 
+		by="M 175,82.1 C 123,251 389,229 541,345 938,489 272,761 743,788 901,854 1410,934 1810,931 2220,928 1980,729 2060,607 2410,506 2170,389 2510,369 2710,334 3030,202 2970,101 2760,23.4 239,30.2 175,82.1 Z" 
+		to="M 175,82.1 C 123,251 665,280 817,396 643,648 754,773 1230,800 1570,792 1190,934 1590,931 2290,982 1400,655 1750,588 2100,487 2390,762 2690,482 2890,447 3030,202 2970,101 2760,23.4 239,30.2 175,82.1 Z" 
+		begin="nami_1.end+0s"/>
+		<animate id="nami_3" attributeName="d" dur="6s" 
+		from="M 175,82.1 C 123,251 665,280 817,396 643,648 754,773 1230,800 1570,792 1190,934 1590,931 2290,982 1400,655 1750,588 2100,487 2390,762 2690,482 2890,447 3030,202 2970,101 2760,23.4 239,30.2 175,82.1 Z" 
+		to="M 175,82.1 C 123,251 389,229 541,345 938,489 272,761 743,788 901,854 1410,934 1810,931 2220,928 1980,729 2060,607 2410,506 2170,389 2510,369 2710,334 3030,202 2970,101 2760,23.4 239,30.2 175,82.1 Z" 
+		begin="nami_2.end+0s"/>
+</path>
+
+</mask>
+
+<rect x="0" y="96" width="3072" height="960" fill="#FFFFFF" />
+<rect id="file" x="-3072" y="-960" width="7074" height="3920" fill="url(#Hamon_Extra)" filter="url(#waterEffect_L)"
+transform="translate(2537, 1960)"
+      transform-origin="center">
+    <animateTransform id="Sky_anime_translate" attributeName="transform" attributeType="XML" from="-100, -100" to="100, 100" dur="5s" fill="freeze" begin="0s;Sky_anime_translate_1.end+0s" />
+    <animateTransform id="Sky_anime_translate_1" attributeName="transform" attributeType="XML" from="100, 100" to="-100, -100" dur="4s" fill="freeze" begin="Sky_anime_translate.end+0s" />
+    <animateTransform attributeName="transform" attributeType="XML" type="scale" values="1,1;1.2,1.2;1,1" dur="15s" repeatCount="indefinite" additive="sum"/>
+</rect>
+
+<mask id="Hamon_zen">
+<rect x="0" y="96" width="3072" height="960" fill="#FFFFFF" />
+<use x="-100" y="0" href="#file" xlink:href="#file" opacity="0.8" mask="url(#Hamon_kei)" >
+</use>
+
+<g id="Light" fill="#000000" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0" >
+	<path d="M 950,391 C 950,391 404,1650 471,1850 539,2050 669,2270 970,2050 1270,1840 1160,391 1160,391"  opacity="0" filter="url(#blurFilter_T)">	
+	<animate id="Light1" attributeName="opacity" from="0" to="0.3" dur="2s" begin="0s;Light2.end+0s"/>
+	<animate id="Light2" attributeName="opacity" from="0.3" to="0" dur="1s" begin="Light1.end"/>
+	</path>
+	<path d="M 1280,429 C 1280,429 1140,1850 1360,2000 1570,2150 1920,2210 1990,1970 2060,1730 1540,453 1540,453 Z"  opacity="0" filter="url(#blurFilter_T)">	
+	<animate id="Light3" attributeName="opacity" from="0" to="0.2" dur="3s" begin="1s;Light4.end+0s"/>
+	<animate id="Light4" attributeName="opacity" from="0.2" to="0" dur="2s" begin="Light3.end"/>
+	</path>
+	<path d="M 1970,463 C 1590,1850 1510,1740 1580,1910 1650,2070 2200,2200 2280,2000 2350,1800 2180,526 2180,526 V 521"  opacity="0" filter="url(#blurFilter_T)">	
+	<animate id="Light5" attributeName="opacity" from="0" to="0.3" dur="3s" begin="3s;Light6.end+0s"/>
+	<animate id="Light6" attributeName="opacity" from="0.3" to="0" dur="3s" begin="Light5.end"/>
+	</path>
+	<path d="M 1660,453 C 1380,2040 1160,1880 1360,2090 1560,2300 1790,2240 1860,2130 1930,2030 1820,497 1820,497" opacity="0" filter="url(#blurFilter_T)">	
+	<animate id="Light7" attributeName="opacity" from="0" to="0.2" dur="2s" begin="0s;Light8.end+0s"/>
+	<animate id="Light8" attributeName="opacity" from="0.2" to="0" dur="1s" begin="Light7.end"/>
+	</path>
+	<path d="M 704,492 C 936,2080 1090,2130 1300,2120 1520,2100 1740,2050 1650,1890 1560,1740 815,521 815,521" opacity="0" filter="url(#blurFilter_T)">	
+	<animate id="Light9" attributeName="opacity" from="0" to="0.3" dur="3s" begin="2s;Light10.end+0s"/>
+	<animate id="Light10" attributeName="opacity" from="0.3" to="0" dur="4s" begin="Light9.end"/>
+	</path>
+	<path d="M 1890,546 C 1890,546 1850,382 2000,430 2150,478 2690,1460 2720,1870 2740,2180 2190,2200 2130,2080" opacity="0" filter="url(#blurFilter_T)">	
+	<animate id="Light11" attributeName="opacity" from="0" to="0.3" dur="3s" begin="0s;Light12.end+0s"/>
+	<animate id="Light12" attributeName="opacity" from="0.3" to="0" dur="2s" begin="Light11.end"/>
+	</path>
+</g>
+
+</mask>
+
+
+
+
+<!--各エリア-->
+<rect id="NPC_waku" x="-180" y="-180" width="360" height="360"/>
+<rect id="Sabun_waku" x="-360" y="-360" width="720" height="720"/>
+<rect id="Tatie_waku" x="-180" y="-360" width="360" height="720"/>
+<rect id="Taitle_waku" x="-720" y="-180" width="1440" height="360"/>
+
+
+<!--開始-->
+<circle cx="0" cy="0" r="10">
+    <animate id="Start" attributeName="opacity" from="1" to="0" dur="0.3s" begin="0s"  fill="freeze"/>
+</circle>
+
+<g id="Table"  filter="url(#waterEffect)">
+<path d="m-650-650h1300l650 1300h-2600zm145 0-505 1300m650-1300-360 1300m504-1300-216 1300m360-1300-72 1300m216-1300 72 1300m72-1300 216 1300m-72-1300 360 1300m-215-1300 505 1300m-2310-1250h2600m-2600 75h2600m-2600 100h2600m-2600 125h2600m-2600 150h2600m-2600 200h2600m-2600 250h2600m-2600-930h2600" fill="none" stroke="url(#linearGradient174)" stroke-width="20" mask="url(#Daikei)" transform="translate(1, 0) scale(1, 0.5)"/>
+</g>
+
+<!--泡1-->
+<circle id="Awa_1" cx="0" cy="0" r="10" filter="url(#blurFilter_S)" opacity="0">
+	<animate id="Awa_1A" attributeName="cx" dur="3s" fill="freeze"
+		values="0; 10; -10; 10; 0" keyTimes="0; 0.25; 0.5; 0.75; 1" begin="Start.end;Awa_1AE.end+2s" additive="sum"/>
+	<animate attributeName="cy" dur="3s" fill="freeze"
+		values="0; -400" keyTimes="0; 1" begin="Start.end;Awa_1AE.end+2s" additive="sum"/>
+	<animate attributeName="r" dur="3s" fill="freeze"
+		values="0; 10; 8; 12; 15" keyTimes="0; 0.25; 0.5; 0.75; 1" begin="Start.end;Awa_1AE.end+2s" additive="sum"/>
+    <animate attributeName="opacity" from="0" to="0.1" dur="0.3s" begin="Start.end;Awa_1AE.end+2s" fill="freeze"/>
+    <animate id="Awa_1AE" attributeName="opacity" from="0.1" to="0" dur="1s" begin="Awa_1A.end-1s"  fill="freeze"/>
+</circle>
+
+<!--泡2-->
+<circle id="Awa_2" cx="0" cy="0" r="10" filter="url(#blurFilter_S)" opacity="0">
+	<animate id="Awa_2A" attributeName="cx" dur="3.5s" fill="freeze"
+		values="0; 15; -13; 14; 0" keyTimes="0; 0.25; 0.5; 0.75; 1" begin="Start.end+0.2s;Awa_2AE.end+1.5s" additive="sum"/>
+	<animate attributeName="cy" dur="3.5s" fill="freeze"
+		values="0; -500" keyTimes="0; 1" begin="Start.end+0.2s;Awa_2AE.end+1.5s" additive="sum"/>
+	<animate attributeName="r" dur="3.5s" fill="freeze"
+		values="0; 12; 9; 13; 16" keyTimes="0; 0.25; 0.5; 0.75; 1" begin="Start.end+0.2s;Awa_2AE.end+1.5s" additive="sum"/>
+    <animate attributeName="opacity" from="0" to="0.3" dur="0.3s" begin="Start.end+0.2s;Awa_2AE.end+1.5s" fill="freeze"/>
+    <animate id="Awa_2AE" attributeName="opacity" from="0.3" to="0" dur="1s" begin="Awa_2A.end-1s"  fill="freeze"/>
+</circle>
+
+<!--泡3-->
+<circle id="Awa_3" cx="0" cy="0" r="10" filter="url(#blurFilter_S)" opacity="0">
+	<animate id="Awa_3A" attributeName="cx" dur="4s" fill="freeze"
+		values="0; 15; -13; 14; 0" keyTimes="0; 0.25; 0.5; 0.75; 1" begin="Start.end+0.4s;Awa_3AE.end+2s" additive="sum"/>
+	<animate attributeName="cy" dur="4s" fill="freeze"
+		values="0; -450" keyTimes="0; 1" begin="Start.end+0.4s;Awa_3AE.end+2s" additive="sum"/>
+	<animate attributeName="r" dur="4s" fill="freeze"
+		values="0; 13; 11; 14; 17" keyTimes="0; 0.25; 0.5; 0.75; 1" begin="Start.end+0.4s;Awa_3AE.end+2s" additive="sum"/>
+    <animate attributeName="opacity" from="0" to="0.2" dur="0.3s" begin="Start.end+0.4s;Awa_3AE.end+2s" fill="freeze"/>
+    <animate id="Awa_3AE" attributeName="opacity" from="0.2" to="0" dur="1s" begin="Awa_3A.end-1s"  fill="freeze"/>
+</circle>
+
+<!--泡4-->
+<circle id="Awa_4" cx="0" cy="0" r="10" filter="url(#blurFilter_S)" opacity="0">
+	<animate id="Awa_4A" attributeName="cx" dur="3.8s" fill="freeze"
+		values="0; 15; -13; 14; 0" keyTimes="0; 0.25; 0.5; 0.75; 1" begin="Start.end+2s;Awa_4AE.end+2s" additive="sum"/>
+	<animate attributeName="cy" dur="3.8s" fill="freeze"
+		values="0; -300" keyTimes="0; 1" begin="Start.end+2s;Awa_4AE.end+2s" additive="sum"/>
+	<animate attributeName="r" dur="3.8s" fill="freeze"
+		values="0; 10; 8; 12; 14" keyTimes="0; 0.25; 0.5; 0.75; 1" begin="Start.end+2s;Awa_4AE.end+2s" additive="sum"/>
+    <animate attributeName="opacity" from="0" to="0.3" dur="0.3s" begin="Start.end+2s;Awa_4AE.end+2s" fill="freeze"/>
+    <animate id="Awa_4AE" attributeName="opacity" from="0.3" to="0" dur="1s" begin="Awa_4A.end-1s"  fill="freeze"/>
+</circle>
+
+
+<!--泡5-->
+<circle id="Awa_5" cx="0" cy="0" r="10" filter="url(#blurFilter_S)" opacity="0">
+	<animate id="Awa_5A" attributeName="cx" dur="4.1s" fill="freeze"
+		values="0; 15; -20; 18; 0" keyTimes="0; 0.25; 0.5; 0.75; 1" begin="Start.end+1.5s;Awa_5AE.end+2s" additive="sum"/>
+	<animate attributeName="cy" dur="4.1s" fill="freeze"
+		values="0; -450" keyTimes="0; 1" begin="Start.end+2s;Awa_5AE.end+1.5s" additive="sum"/>
+	<animate attributeName="r" dur="4.1s" fill="freeze"
+		values="0; 12; 10; 14; 16" keyTimes="0; 0.25; 0.5; 0.75; 1" begin="Start.end+1.5s;Awa_5AE.end+2s" additive="sum"/>
+    <animate attributeName="opacity" from="0" to="0.3" dur="0.3s" begin="Start.end+1.5s;Awa_5AE.end+2s" fill="freeze"/>
+    <animate id="Awa_5AE" attributeName="opacity" from="0.3" to="0" dur="1s" begin="Awa_5A.end-1s"  fill="freeze"/>
+</circle>
+
+<!--マスク-->
+<mask id="Daikei">
+<path d="m-650-650-650 1300h2600l-650-1300z" fill="#ffffff" stroke-width="20" transform="translate(1, 0) scale(1.01, 1.05)"/>
+</mask>
+
+
+<mask id="Mask_file">
+<rect id="file" x="0" y="0" width="3072" height="3960" fill="#FFFFFF"/>
+<rect id="file" x="96" y="2424" width="2880" height="1440" fill="#808080"/>
+<rect id="file" x="384" y="98" width="2304" height="955" fill="#000000" filter="url(#blurFilter_B)"/>
+
+
+<use href="#Table" xlink:href="#Table" transform="translate(1536, 1900)" opacity="0.5">
+</use>
+
+<use href="#Table" xlink:href="#Table" transform="translate(1536, 1800)"  filter="url(#blurFilter_T)" opacity="1">
+	<animate id="pika1" attributeName="opacity" from="0.6" to="0.4" dur="5s" begin="0s;pika2.end+0s"/>
+	<animate id="pika2" attributeName="opacity" from="0.4" to="0.6" dur="5s" begin="pika1.end"/>
+</use>
+
+<use href="#Table" xlink:href="#Table" transform="translate(1536, 1890)"  filter="url(#blurFilter_T)" opacity="1">
+	<animate attributeName="opacity" from="0.3" to="0.2s" dur="5s" begin="0s;pika2.end+0s"/>
+	<animate attributeName="opacity" from="0.2" to="0.3" dur="5s" begin="pika1.end"/>
+</use>
+
+<use href="#Table" xlink:href="#Table" transform="translate(1536, 1910)" filter="url(#blurFilter)" opacity="1">
+	<animate attributeName="opacity" from="0.5" to="1" dur="5s" begin="0s;pika2.end+0s"/>
+	<animate attributeName="opacity" from="1" to="0.5" dur="5s" begin="pika1.end"/>
+</use>
+
+<use href="#Table" xlink:href="#Table" transform="translate(1536, 1980)" filter="url(#blurFilter)" opacity="0.7">
+	<animate attributeName="opacity" from="0.3" to="0.5" dur="5s" begin="0s;pika2.end+0s"/>
+	<animate attributeName="opacity" from="0.5" to="0.3" dur="5s" begin="pika1.end"/>
+</use>
+
+<use href="#Awa_1" xlink:href="#Awa_1" x="600" y="2000" transform="scale(1)"/>
+<use href="#Awa_1" xlink:href="#Awa_1" x="3000" y="2500" transform="scale(0.7)"/>
+<use href="#Awa_1" xlink:href="#Awa_1" x="2100" y="1800" transform="scale(1.2)"/>
+
+<use href="#Awa_2" xlink:href="#Awa_2" x="1000" y="1900" transform="scale(1)"/>
+<use href="#Awa_2" xlink:href="#Awa_2" x="2000" y="2000" transform="scale(1)"/>
+<use href="#Awa_2" xlink:href="#Awa_2" x="2000" y="2450" transform="scale(0.7)"/>
+<use href="#Awa_2" xlink:href="#Awa_2" x="1000" y="1790" transform="scale(1.2)"/>
+
+<use href="#Awa_3" xlink:href="#Awa_3" x="2400" y="1900" transform="scale(1)"/>
+<use href="#Awa_3" xlink:href="#Awa_3" x="1200" y="2450" transform="scale(0.7)"/>
+<use href="#Awa_3" xlink:href="#Awa_3" x="1500" y="1790" transform="scale(1.2)"/>
+
+<use href="#Awa_4" xlink:href="#Awa_4" x="2000" y="1900" transform="scale(1)"/>
+<use href="#Awa_4" xlink:href="#Awa_4" x="2500" y="2450" transform="scale(0.7)"/>
+<use href="#Awa_4" xlink:href="#Awa_4" x="600" y="1790" transform="scale(1.2)"/>
+
+<use href="#Awa_4" xlink:href="#Awa_4" x="1500" y="1900" transform="scale(1)"/>
+<use href="#Awa_4" xlink:href="#Awa_4" x="1200" y="2450" transform="scale(0.7)"/>
+<use href="#Awa_4" xlink:href="#Awa_4" x="2300" y="1790" transform="scale(1.2)"/>
+
+<!--枠線-->
+<g id="waku_All" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" fill-opacity="0" stroke-opacity="1" transform="translate(96, 2424)">
+
+	<use id="NPC_waku1" href="#NPC_waku" xlink:href="#NPC_waku" x="900" y="180" />
+	<use id="NPC_waku2" href="#NPC_waku" xlink:href="#NPC_waku" x="1260" y="180" />
+	<use id="NPC_waku3" href="#NPC_waku" xlink:href="#NPC_waku" x="1620" y="180" />
+	<use id="NPC_waku4" href="#NPC_waku" xlink:href="#NPC_waku" x="1980" y="180" />
+
+	<use id="Sabun_waku1" href="#Sabun_waku" xlink:href="#Sabun_waku" x="360" y="360" />
+	<use id="Sabun_waku2" href="#Sabun_waku" xlink:href="#Sabun_waku" x="360" y="1080" />
+	<use id="Sabun_waku3" href="#Sabun_waku" xlink:href="#Sabun_waku" x="2520" y="360" />
+	<use id="Sabun_waku4" href="#Sabun_waku" xlink:href="#Sabun_waku" x="2520" y="1080" />
+
+	<use id="Tatie_waku1" href="#Tatie_waku" xlink:href="#Tatie_waku" x="900" y="1080" />
+	<use id="Tatie_waku2" href="#Tatie_waku" xlink:href="#Tatie_waku" x="1260" y="1080" />
+	<use id="Tatie_waku3" href="#Tatie_waku" xlink:href="#Tatie_waku" x="1620" y="1080" />
+	<use id="Tatie_waku4" href="#Tatie_waku" xlink:href="#Tatie_waku" x="1980" y="1080" />
+	
+	<use id="Taitle_waku1" href="#Taitle_waku" xlink:href="#Taitle_waku" x="1440" y="540" />
+
+</g>
+
+
+<g id="Light" fill="#000000" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0" >
+	<path d="M 950,391 C 950,391 404,1650 471,1850 539,2050 669,2270 970,2050 1270,1840 1160,391 1160,391"  opacity="0" filter="url(#blurFilter_T)">	
+	<animate id="Light1" attributeName="opacity" from="0" to="0.3" dur="2s" begin="0s;Light2.end+0s"/>
+	<animate id="Light2" attributeName="opacity" from="0.3" to="0" dur="1s" begin="Light1.end"/>
+	</path>
+	<path d="M 1280,429 C 1280,429 1140,1850 1360,2000 1570,2150 1920,2210 1990,1970 2060,1730 1540,453 1540,453 Z"  opacity="0" filter="url(#blurFilter_T)">	
+	<animate id="Light3" attributeName="opacity" from="0" to="0.2" dur="3s" begin="1s;Light4.end+0s"/>
+	<animate id="Light4" attributeName="opacity" from="0.2" to="0" dur="2s" begin="Light3.end"/>
+	</path>
+	<path d="M 1970,463 C 1590,1850 1510,1740 1580,1910 1650,2070 2200,2200 2280,2000 2350,1800 2180,526 2180,526 V 521"  opacity="0" filter="url(#blurFilter_T)">	
+	<animate id="Light5" attributeName="opacity" from="0" to="0.3" dur="3s" begin="3s;Light6.end+0s"/>
+	<animate id="Light6" attributeName="opacity" from="0.3" to="0" dur="3s" begin="Light5.end"/>
+	</path>
+	<path d="M 1660,453 C 1380,2040 1160,1880 1360,2090 1560,2300 1790,2240 1860,2130 1930,2030 1820,497 1820,497" opacity="0" filter="url(#blurFilter_T)">	
+	<animate id="Light7" attributeName="opacity" from="0" to="0.2" dur="2s" begin="0s;Light8.end+0s"/>
+	<animate id="Light8" attributeName="opacity" from="0.2" to="0" dur="1s" begin="Light7.end"/>
+	</path>
+	<path d="M 704,492 C 936,2080 1090,2130 1300,2120 1520,2100 1740,2050 1650,1890 1560,1740 815,521 815,521" opacity="0" filter="url(#blurFilter_T)">	
+	<animate id="Light9" attributeName="opacity" from="0" to="0.3" dur="3s" begin="2s;Light10.end+0s"/>
+	<animate id="Light10" attributeName="opacity" from="0.3" to="0" dur="4s" begin="Light9.end"/>
+	</path>
+	<path d="M 1890,546 C 1890,546 1850,382 2000,430 2150,478 2690,1460 2720,1870 2740,2180 2190,2200 2130,2080" opacity="0" filter="url(#blurFilter_T)">	
+	<animate id="Light11" attributeName="opacity" from="0" to="0.3" dur="3s" begin="0s;Light12.end+0s"/>
+	<animate id="Light12" attributeName="opacity" from="0.3" to="0" dur="2s" begin="Light11.end"/>
+	</path>
+</g>
+
+</mask>
+
+<!--魚-->
+<path id="fish1" d="M -37,7.71 C -32.4,-8.75 -28.4,-18.7 4.03,-28.8 33.3,-29.9 11,-8.11 18.3,-7.31 23.9,-7.91 30.1,-10.6 34.6,-14.4 33.1,-9.28 36.7,-3.13 31.9,3.36 33.2,10.9 31.4,16 31.4,18.9 28.2,15.8 27,9.69 19.4,10.2 13.2,13.9 27.9,24.8 11.4,26.5 7.39,26.6 -5.75,23.8 -14.1,21 -16.9,15.9 -7.22,24.8 -13.9,24.2 -22.8,17.2 -32.7,15.1 -37,7.71 Z" 
+	fill="#0080AE"  filter="url(#blurFilter3)">
+		<animate id="nami_1" attributeName="d" dur="1s" 
+		from="M -37,7.71 C -32.4,-8.75 -28.4,-18.7 4.03,-28.8 33.3,-29.9 11,-8.11 18.3,-7.31 23.9,-7.91 30.1,-10.6 34.6,-14.4 33.1,-9.28 36.7,-3.13 31.9,3.36 33.2,10.9 31.4,16 31.4,18.9 28.2,15.8 27,9.69 19.4,10.2 13.2,13.9 27.9,24.8 11.4,26.5 7.39,26.6 -5.75,23.8 -14.1,21 -16.9,15.9 -7.22,24.8 -13.9,24.2 -22.8,17.2 -32.7,15.1 -37,7.71 Z" 
+		by="M -33.2,7.2 C -30.6,-9.52 -26.1,-17.6 -3.14,-28 24.9,-37.8 11,-8.11 18.3,-7.31 23.9,-7.91 23.2,-14.2 27.7,-18 26.2,-12.9 32.8,-9.01 29.6,-2.01 32.9,5.02 35.5,8.07 35.5,11 32.3,7.87 27,9.69 19.4,10.2 13.2,13.9 33.3,20.4 16.8,22.1 12.8,22.2 -4.98,21.7 -13.4,18.9 -16.2,13.8 -4.15,24.8 -10.9,24.2 -17.4,20 -28.1,12.8 -33.2,7.2 Z" 
+		to="M -37,7.71 C -34.4,-9.01 -33.3,-20.7 -0.833,-30.8 27.2,-40.6 11,-8.11 18.3,-7.31 23.9,-7.91 28.3,-15.7 32.8,-19.5 31.3,-14.4 35.4,-9.01 32.2,-2.01 35.5,5.02 34.5,13.7 34.5,16.6 31.3,13.5 27,9.69 19.4,10.2 13.2,13.9 30.7,24 14.2,25.7 10.2,25.8 -8.31,22 -16.7,19.2 -19.5,14.1 -6.2,25.6 -12.9,25 -21.2,18 -31.9,13.3 -37,7.71 Z" 
+		begin="0s;nami_3.end+0s"/>
+		<animate id="nami_2" attributeName="d" dur="2s" 
+		from="M -37,7.71 C -34.4,-9.01 -33.3,-20.7 -0.833,-30.8 27.2,-40.6 11,-8.11 18.3,-7.31 23.9,-7.91 28.3,-15.7 32.8,-19.5 31.3,-14.4 35.4,-9.01 32.2,-2.01 35.5,5.02 34.5,13.7 34.5,16.6 31.3,13.5 27,9.69 19.4,10.2 13.2,13.9 30.7,24 14.2,25.7 10.2,25.8 -8.31,22 -16.7,19.2 -19.5,14.1 -6.2,25.6 -12.9,25 -21.2,18 -31.9,13.3 -37,7.71 Z" 
+		by="M -37,15.6 C -34.4,-1.08 -33.3,-20.7 -0.833,-30.8 27.2,-40.6 11.5,-17.6 18.8,-16.8 24.4,-17.4 26,-20 30.5,-23.8 29,-18.7 35.7,-16.9 32.5,-9.94 35.8,-2.91 35.3,-7.53 34,4.83 30.8,1.73 29,-0.03 21.4,0.48 15.2,4.18 30.4,18.1 13.9,19.8 9.94,19.9 -8.31,21.5 -16.7,18.7 -19.5,13.6 -4.92,22 -10.6,21.7 -10.6,21.7 -31.9,21.2 -37,15.6 Z" 
+		to="M -37,15.6 C -34.4,-1.08 -33.3,-20.7 -0.833,-30.8 18.5,-35.6 12,-18.9 18.8,-16.8 24.4,-17.4 22,-26.5 24.2,-26.5 26.8,-21.6 32.3,-18.9 29.1,-11.9 32.4,-4.9 34.4,-10.2 33.1,2.12 28.4,1.19 28.8,-3.65 21.2,-3.14 15,0.562 30.4,18.1 13.9,19.8 9.94,19.9 -8.31,21.5 -16.7,18.7 -19.5,13.6 -4.92,22 -10.6,21.7 -10.6,21.7 -31.9,21.2 -37,15.6 Z" 
+		begin="nami_1.end+0s"/>
+		<animate id="nami_3" attributeName="d" dur="1s" 
+		from="M -37,15.6 C -34.4,-1.08 -33.3,-20.7 -0.833,-30.8 18.5,-35.6 12,-18.9 18.8,-16.8 24.4,-17.4 22,-26.5 24.2,-26.5 26.8,-21.6 32.3,-18.9 29.1,-11.9 32.4,-4.9 34.4,-10.2 33.1,2.12 28.4,1.19 28.8,-3.65 21.2,-3.14 15,0.562 30.4,18.1 13.9,19.8 9.94,19.9 -8.31,21.5 -16.7,18.7 -19.5,13.6 -4.92,22 -10.6,21.7 -10.6,21.7 -31.9,21.2 -37,15.6 Z" 
+		to="M -37,7.71 C -32.4,-8.75 -28.4,-18.7 4.03,-28.8 33.3,-29.9 11,-8.11 18.3,-7.31 23.9,-7.91 30.1,-10.6 34.6,-14.4 33.1,-9.28 36.7,-3.13 31.9,3.36 33.2,10.9 31.4,16 31.4,18.9 28.2,15.8 27,9.69 19.4,10.2 13.2,13.9 27.9,24.8 11.4,26.5 7.39,26.6 -5.75,23.8 -14.1,21 -16.9,15.9 -7.22,24.8 -13.9,24.2 -22.8,17.2 -32.7,15.1 -37,7.71 Z" 
+		begin="nami_2.end+0s"/>
+</path>
+
+<path id="fish2" d="M -37,7.71 C -32.4,-8.75 -28.4,-18.7 4.03,-28.8 33.3,-29.9 11,-8.11 18.3,-7.31 23.9,-7.91 30.1,-10.6 34.6,-14.4 33.1,-9.28 36.7,-3.13 31.9,3.36 33.2,10.9 31.4,16 31.4,18.9 28.2,15.8 27,9.69 19.4,10.2 13.2,13.9 27.9,24.8 11.4,26.5 7.39,26.6 -5.75,23.8 -14.1,21 -16.9,15.9 -7.22,24.8 -13.9,24.2 -22.8,17.2 -32.7,15.1 -37,7.71 Z" 
+	fill="#0080AE"  filter="url(#blurFilter3)">
+		<animate id="nami_1" attributeName="d" dur="1s" 
+		from="M -33.2,7.2 C -30.6,-9.52 -26.1,-17.6 -3.14,-28 24.9,-37.8 11,-8.11 18.3,-7.31 23.9,-7.91 23.2,-14.2 27.7,-18 26.2,-12.9 32.8,-9.01 29.6,-2.01 32.9,5.02 35.5,8.07 35.5,11 32.3,7.87 27,9.69 19.4,10.2 13.2,13.9 33.3,20.4 16.8,22.1 12.8,22.2 -4.98,21.7 -13.4,18.9 -16.2,13.8 -4.15,24.8 -10.9,24.2 -17.4,20 -28.1,12.8 -33.2,7.2 Z" 
+		by="M -33.2,7.2 C -30.6,-9.52 -26.1,-17.6 -3.14,-28 24.9,-37.8 11,-8.11 18.3,-7.31 23.9,-7.91 23.2,-14.2 27.7,-18 26.2,-12.9 32.8,-9.01 29.6,-2.01 32.9,5.02 35.5,8.07 35.5,11 32.3,7.87 27,9.69 19.4,10.2 13.2,13.9 33.3,20.4 16.8,22.1 12.8,22.2 -4.98,21.7 -13.4,18.9 -16.2,13.8 -4.15,24.8 -10.9,24.2 -17.4,20 -28.1,12.8 -33.2,7.2 Z" 
+		to="M -37,7.71 C -32.4,-8.75 -28.4,-18.7 4.03,-28.8 33.3,-29.9 11,-8.11 18.3,-7.31 23.9,-7.91 30.1,-10.6 34.6,-14.4 33.1,-9.28 36.7,-3.13 31.9,3.36 33.2,10.9 31.4,16 31.4,18.9 28.2,15.8 27,9.69 19.4,10.2 13.2,13.9 27.9,24.8 11.4,26.5 7.39,26.6 -5.75,23.8 -14.1,21 -16.9,15.9 -7.22,24.8 -13.9,24.2 -22.8,17.2 -32.7,15.1 -37,7.71 Z" 
+		begin="0s;nami_3.end+0s"/>
+		<animate id="nami_2" attributeName="d" dur="2s" 
+		from="M -37,7.71 C -32.4,-8.75 -28.4,-18.7 4.03,-28.8 33.3,-29.9 11,-8.11 18.3,-7.31 23.9,-7.91 30.1,-10.6 34.6,-14.4 33.1,-9.28 36.7,-3.13 31.9,3.36 33.2,10.9 31.4,16 31.4,18.9 28.2,15.8 27,9.69 19.4,10.2 13.2,13.9 27.9,24.8 11.4,26.5 7.39,26.6 -5.75,23.8 -14.1,21 -16.9,15.9 -7.22,24.8 -13.9,24.2 -22.8,17.2 -32.7,15.1 -37,7.71 Z" 
+		by="M -37,15.6 C -34.4,-1.08 -33.3,-20.7 -0.833,-30.8 27.2,-40.6 11.5,-17.6 18.8,-16.8 24.4,-17.4 26,-20 30.5,-23.8 29,-18.7 35.7,-16.9 32.5,-9.94 35.8,-2.91 35.3,-7.53 34,4.83 30.8,1.73 29,-0.03 21.4,0.48 15.2,4.18 30.4,18.1 13.9,19.8 9.94,19.9 -8.31,21.5 -16.7,18.7 -19.5,13.6 -4.92,22 -10.6,21.7 -10.6,21.7 -31.9,21.2 -37,15.6 Z" 
+		to="M -37,15.6 C -34.4,-1.08 -33.3,-20.7 -0.833,-30.8 18.5,-35.6 12,-18.9 18.8,-16.8 24.4,-17.4 22,-26.5 24.2,-26.5 26.8,-21.6 32.3,-18.9 29.1,-11.9 32.4,-4.9 34.4,-10.2 33.1,2.12 28.4,1.19 28.8,-3.65 21.2,-3.14 15,0.562 30.4,18.1 13.9,19.8 9.94,19.9 -8.31,21.5 -16.7,18.7 -19.5,13.6 -4.92,22 -10.6,21.7 -10.6,21.7 -31.9,21.2 -37,15.6 Z" 
+		begin="nami_1.end+0s"/>
+		<animate id="nami_3" attributeName="d" dur="1s" 
+		from="M -37,15.6 C -34.4,-1.08 -33.3,-20.7 -0.833,-30.8 18.5,-35.6 12,-18.9 18.8,-16.8 24.4,-17.4 22,-26.5 24.2,-26.5 26.8,-21.6 32.3,-18.9 29.1,-11.9 32.4,-4.9 34.4,-10.2 33.1,2.12 28.4,1.19 28.8,-3.65 21.2,-3.14 15,0.562 30.4,18.1 13.9,19.8 9.94,19.9 -8.31,21.5 -16.7,18.7 -19.5,13.6 -4.92,22 -10.6,21.7 -10.6,21.7 -31.9,21.2 -37,15.6 Z" 
+		to="M -33.2,7.2 C -30.6,-9.52 -26.1,-17.6 -3.14,-28 24.9,-37.8 11,-8.11 18.3,-7.31 23.9,-7.91 23.2,-14.2 27.7,-18 26.2,-12.9 32.8,-9.01 29.6,-2.01 32.9,5.02 35.5,8.07 35.5,11 32.3,7.87 27,9.69 19.4,10.2 13.2,13.9 33.3,20.4 16.8,22.1 12.8,22.2 -4.98,21.7 -13.4,18.9 -16.2,13.8 -4.15,24.8 -10.9,24.2 -17.4,20 -28.1,12.8 -33.2,7.2 Z" 
+		begin="nami_2.end+0s"/>
+</path>
+
+
+</defs>
+
+<rect id="file" x="0" y="0" width="3072" height="3960" fill="#FFFFFF"/>
+
+
+<rect x="0" y="96" width="3072" height="4160" fill="url(#seaGradient2)" mask="url(#Hamon_zen)">
+</rect>
+
+
+<rect id="file" x="0" y="0" width="3072" height="3960" mask="url(#Mask_file)" fill="url(#seaGradient)"/>
+
+<use  href="#fish1" xlink:href="#fish1" x="3192" y="1000" filter="url(#blurFilter_S)">
+<animateTransform attributeName="transform" type="translate" values="0 -20; -2000 80; -3200 120" keyTimes="0; 0.6; 1" begin="1s" dur="17s" repeatCount="indefinite" />
+</use>
+
+<use  href="#fish1" xlink:href="#fish1" x="3210" y="1100" filter="url(#blurFilter_S)">
+<animateTransform attributeName="transform" type="translate" values="0 -10; -2000 90; -3200 140" keyTimes="0; 0.7; 1" dur="17s" repeatCount="indefinite" />
+</use>
+
+<use  href="#fish1" xlink:href="#fish1" x="3310" y="1050" filter="url(#blurFilter_S)">
+<animateTransform attributeName="transform" type="translate" values="0 -30; -2000 50; -3400 150" keyTimes="0; 0.5; 1" begin="3s" dur="17s" repeatCount="indefinite" />
+</use>
+
+<use  href="#fish2" xlink:href="#fish2" x="3192" y="1200" filter="url(#blurFilter_S)">
+<animateTransform attributeName="transform" type="translate" values="0 -20; -1500 40; -3200 60" keyTimes="0; 0.4; 1" begin="4s" dur="17s" repeatCount="indefinite" />
+</use>
+
+<use  href="#fish2" xlink:href="#fish2" x="3210" y="1300" filter="url(#blurFilter_S)">
+<animateTransform attributeName="transform" type="translate" values="0 -10; -2000 50; -3200 100" keyTimes="0; 0.5; 1" begin="5s" dur="17s" repeatCount="indefinite" />
+</use>
+
+<use  href="#fish2" xlink:href="#fish2" x="3310" y="1250" filter="url(#blurFilter_S)">
+<animateTransform attributeName="transform" type="translate" values="0 -30; -2000 60; -3400 70" keyTimes="0; 0.6; 1" begin="6s" dur="17s" repeatCount="indefinite" />
+</use>
+
+</svg>
+

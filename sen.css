@@ -1,0 +1,393 @@
+@charset "UTF-8";
+
+/* 全体のリセット */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* フォント設定 */
+.yuji-mai-regular {
+  font-family: "Yuji Mai", serif;
+}
+
+.rocknroll-one-regular {
+  font-family: "RocknRoll One", sans-serif;
+}
+
+.hina-mincho-regular {
+  font-family: "Hina Mincho", serif;
+}
+
+/* ヘッダー */
+header {
+  width: 100%;
+  padding: 0;
+  background-color: #CFB06A;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.headline {
+  font-family: 'RocknRoll One', sans-serif;
+  margin: 0;
+  padding: 0 2em;
+  text-align: start;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: #3A555F;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.nav-list {
+  text-align: end;
+  margin: 0;
+  padding: 0 2.5em;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-list-item {
+  font-family: 'Yuji Mai', serif;
+  margin: 0 0.5em;
+  color: #3A555F;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-list-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-list-item:hover {
+  color: #734876;
+}
+
+/* メインコンテンツ */
+main {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2em 0;
+  background-color: #3A555F;
+  text-align: left;
+}
+
+summary {
+  margin: 0;
+  padding: 0;
+}
+
+.main-title {
+  font-size: 1.5em;
+  font-family: 'Hina Mincho', serif;
+  color: #CFB06A;
+  padding: 0 3em;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.main-text-h2,
+.main-text-h3,
+.main-text-h4,
+.main-text-h5,
+.main-text-Linktext {
+  font-family: 'RocknRoll One', sans-serif;
+  color: #CFB06A;
+}
+
+.main-text-h2 {
+  font-size: clamp(1rem, 4vw, 3em);
+  margin: 1em 0;
+  padding: 0 1em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.main-text-h3 {
+  font-size: clamp(1rem, 3vw, 2em);
+  margin: 1em 4vw;
+  padding: 0 1em;
+}
+
+.main-text-h4 {
+  font-size: clamp(0.8rem, 3vw, 2em);
+  margin: 10px 0;
+  padding: 0 1.5em;
+  background-color: #3A555F;
+}
+
+.main-text-h5 {
+  font-size: clamp(0.5em, 2.5vw, 1em);
+  margin: 10px 0;
+  padding: 0.2em 0.2em;
+}
+
+.main-text-Linktext {
+  font-size: 2em;
+  margin: 1em 0;
+  padding: 0 1em;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* ハイライト */
+.highlight {
+  font-size: clamp(2rem, 2.5vw, 3.2em);
+  transition: font-size 0.5s ease, color 0.5s ease;
+  color: #F0E2D6;
+}
+
+/* 画像 */
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 1em;
+}
+
+/* メインコンテナ */
+.flex-container {
+  display: flex;
+  align-items: stretch;
+  gap: 1vw;
+  padding: 0vw 10vw;
+  height: auto;
+  max-height: none;
+  justify-content: space-evenly;  /* 横の位置指定 */
+  flex-wrap: wrap; /* 折返し指定 */
+  
+}
+
+.flex-item {
+  flex: 1 1 calc(33.333% - 2vw); /* パーセンテージベースで幅を調整 */
+  background-color: rgba(114, 136, 177, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.flex-item:hover {
+  transform: scale(1.02);
+}
+
+.flex-item h5,
+.flex-item a {
+  font-family: 'Hina Mincho', serif;
+  font-size: clamp(0.8rem, 1vw, 2.5em);
+  margin: 10px 0;
+  padding: 0.2em 0vw;
+  color: #CFB06A;
+  z-index: 10;
+  position: relative;
+}
+
+.flex-item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.child-img {
+  position: absolute;
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+}
+
+/* ボタンを中央に配置するためのスタイル */
+.btn-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10; /* 必要に応じて重ね順を調整 */
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* スライダー */
+.swiper-container {
+  text-align: center;
+}
+
+.swiper-container .swiper-slide img {
+  aspect-ratio: 16/9;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.swiper-container .swiper-slide {
+  position: relative;
+  width: 100%;
+}
+
+.swiper-container .swiper-slide:before {
+  content: "";
+  display: block;
+  aspect-ratio: 16/9;
+}
+
+.swiper-container .swiper-slide iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#thumbs {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+#thumbs .swiper-slide {
+  width: 20%;
+  height: 100%;
+  opacity: 0.2;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+#thumbs .swiper-slide:before {
+  content: none;
+}
+
+#thumbs .swiper-slide-active {
+  opacity: 1;
+}
+
+/* メディアクエリ */
+@media (max-width: 1440px) {
+  header {
+    flex-direction: column;
+  }
+
+  .nav-list-item {
+    margin: 0.5em 0;
+    padding: 0 1em;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+  }
+
+  .main-image {
+    height: auto;
+    max-height: 60vw;
+  }
+
+  main {
+    margin-top: 8vw;
+  }
+
+  .flex-container {
+  flex-direction:column;
+  }
+
+  .flex-item {
+    margin: 0 1em 1em;
+  flex:calc(1003% - 30vw);
+  }
+
+  .flex-item h5,
+  .flex-item a {
+  font-size: clamp(0.8em,1.6vw, 3em);
+  }
+
+  .swiper-container {
+    width: 100%;
+  }
+
+  footer {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1441px) {
+  .swiper-container {
+    width: 1441px;
+  }
+}
+
+
+
+/* フッター */
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  list-style: none;
+  padding: 2% 4%;
+  margin: 0;
+}
+
+.footer-text li {
+  margin: 0 6px;
+  background-color: #CFB06A;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-text li:hover {
+  transform: translateY(-5px);
+  background-color: #CFB06A;
+}
+
+.footer-text li img,
+.footer-text li svg {
+  max-width: 100%;
+  height: 50px;
+}
+
+.footer-text li svg:hover path {
+  fill: #734876;
+}
+
+/* スマホ用 */
+@media (max-width: 1440px) {
+  footer {
+    width: 100%;
+  }
+}

@@ -1,0 +1,52 @@
+<svg width="320" height="320" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" overflow="hidden">
+
+<defs>
+
+<g id="六角形">
+<path d="M130 75 L0 150 L-130 75 L-130 -75 L-0 -150 L130 -75 z"></path>
+</g>
+
+<g id="六角重" stroke="#CDB557" stroke-width="10">
+	<use href="#六角形" xlink:href="#六角形">
+	</use>
+	<use href="#六角形" xlink:href="#六角形" transform="scale(0.6, 0.6)" >
+	</use>
+	<use href="#紅梅" xlink:href="#紅梅"/>
+</g>
+
+<g id="梅花弁">
+	<path d="M 30,-50 C 30,-33.4 9.19,-9.84 0,0 -9.73,-9.57 -30,-33.4 -30,-50 -30,-66.6 -16.6,-80 0,-80 16.6,-80 30,-66.6 30,-50 Z"/>
+	<path d="M 0 0 L 0 -30"/>
+</g>
+
+<g id="梅" fill="CDB557" stroke="#CDB557" stroke-width="3">
+	<use href="#梅花弁" xlink:href="#梅花弁"/>
+	<use href="#梅花弁" xlink:href="#梅花弁" transform="rotate(72)"/>
+	<use href="#梅花弁" xlink:href="#梅花弁" transform="rotate(144)"/>
+	<use href="#梅花弁" xlink:href="#梅花弁" transform="rotate(216)"/>
+	<use href="#梅花弁" xlink:href="#梅花弁" transform="rotate(288)"/>
+	<circle cx="0" cy="0" r="10" fill="#DCD2A9"/>
+</g>
+
+<g id="紅梅" fill="#B81B30" stroke="#CDB557" stroke-width="3">
+	<use href="#梅" xlink:href="#梅"/>
+</g>
+
+<g id="白梅" fill="#D7D2DC" stroke="#CDB557" stroke-width="3">
+	<use href="#梅" xlink:href="#梅"/>
+</g>
+
+<g id="黄梅" fill="#DCD2A9" stroke="#CDB557" stroke-width="3">
+	<use href="#梅" xlink:href="#梅"/>
+</g>
+
+<g id="無梅" fill="none" stroke="#CDB557" stroke-width="4">
+	<use href="#梅" xlink:href="#梅"/>
+</g>
+
+</defs>
+<rect x="0" y="0" width="100%" height="100%" fill="none" stroke="#F46860" stroke-width="5" stroke-dasharray="2,15" stroke-linecap="round" />
+	<use href="#六角重" xlink:href="#六角重" x="160" y="160">
+	</use>
+
+</svg>

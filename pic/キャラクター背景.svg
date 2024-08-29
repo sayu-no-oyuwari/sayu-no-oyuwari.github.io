@@ -1,0 +1,126 @@
+<svg width="960" height="960" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" overflow="hidden">
+
+<defs>
+
+<rect id="Sikaku1" x="-150" y="-150"  width="300" height="300" fill="none" stroke="#FFFFFF" stroke-width="20" stroke-opacity="30%">
+	<animateTransform
+		attributeName="transform"
+		type="scale" dur="5s"
+		repeatCount="indefinite"
+		values=" 0 0; 1 0.2 ; 1 1; 1 1 ; 0 0;" />
+</rect>
+
+
+<rect id="Sikaku2" x="-215" y="-215"  width="430" height="430" fill="#FFFFFF" stroke="none"  stroke-width="20"  fill-opacity="10%">
+	<animateTransform
+		attributeName="transform"
+		type="scale" dur="5s"
+		repeatCount="indefinite"
+		values=" 1 0.2; 1 1 ; 1 1; 0 0 ; 1 0.2;" />
+</rect>
+
+<rect id="Sikaku3" x="-240" y="-480"  width="480" height="960" fill="#FFFFFF" stroke="#FFFFFF"  stroke-width="20"  fill-opacity="10%" stroke-opacity="20%">
+	<animateTransform
+		attributeName="transform"
+		type="scale" dur="6s"
+		repeatCount="indefinite"
+		values=" 0 0; 0 0; 0.5 0.5; 1 1 ; 1 1; 1 1" />
+</rect>
+
+<rect id="Sikaku4" x="-240" y="-480"  width="480" height="960" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-opacity="30%">
+	<animateTransform
+		attributeName="transform"
+		type="scale" dur="6s"
+		repeatCount="indefinite"
+		values=" 0 0; 0.4 0.4; 0.8 0.8 ; 1 1 ; 1 1; 1 1" />
+</rect>
+
+<rect id="Sikaku5" x="-240" y="-480"  width="480" height="960" fill="#FFFFFF" stroke="#FFFFFF"  stroke-width="20"  fill-opacity="10%" stroke-opacity="20%">
+	<animateTransform
+		attributeName="transform"
+		type="scale" dur="6s"
+		repeatCount="indefinite"
+		values=" 0 0; 0 0; 0 0; 0.5 0.5 ; 1 1; 1 1" />
+</rect>
+
+
+<circle id="maru1" cx="0" cy="0" r="30" fill="#FFFFFF"  fill-opacity="50%">
+	<animateTransform id="maru_Anime1"
+		attributeName="transform"
+		type="scale" dur="0.4s"
+		values="0 0; 0.4 0.4; 1 1"
+		begin="0;maru_Anime3.end-0.2s"/>
+</circle>
+
+<circle id="maru2" cx="0" cy="0" r="30" fill="#FFFFFF"  fill-opacity="50%">
+	<animateTransform id="maru_Anime2"
+		attributeName="transform"
+		type="scale" dur="0.7s"
+		values="0 0; 0.4 0.4; 1 1"
+		begin="maru_Anime1.end-0.2s"/>
+</circle>
+
+<circle id="maru3" cx="0" cy="0" r="30" fill="#FFFFFF"  fill-opacity="50%">
+	<animateTransform id="maru_Anime3"
+		attributeName="transform"
+		type="scale" dur="0.7s"
+		values="0 0; 0.4 0.4; 1 1"
+		begin="maru_Anime2.end-0.2s"/>
+</circle>
+
+<circle id="maru4" cx="0" cy="0" r="960" stroke="#FFFFFF" stroke-width="20"  fill-opacity="0" stroke-opacity="10%">
+	<animateTransform
+		attributeName="transform"
+		type="scale" dur="10s"
+		repeatCount="indefinite"
+		values=" 0 0; 0 0; 0 0; 0.5 0.5 ; 1 1; 2 2" />
+	<animate
+		attributeName="stroke-width"
+		dur="10s"
+		repeatCount="indefinite"
+		to="0" from="450" />
+</circle>
+
+	<clipPath id="Clip_1">
+		<rect x="430" y="480" width="480" height="200">
+		<animateTransform attributeName="transform" type="translate" dur="0.5s" from="0,0" to="-350,0" begin="0;GPC_Anime3.end+0s"/>
+		<animateTransform attributeName="transform" type="translate" dur="5s" from="-350,0" to="-350,0" begin="0;GPC_Anime2.end+0s"/>
+		</rect>
+	</clipPath>
+	
+	<clipPath id="Clip_2">
+		<rect x="910" y="280" width="480" height="200">
+		<animateTransform attributeName="transform" type="translate" dur="0.5s" from="0,0" to="350,0" begin="0;GPC_Anime3.end+0s"/>
+		<animateTransform attributeName="transform" type="translate" dur="5s" from="350,0" to="350,0" begin="0;GPC_Anime2.end+0s"/>		
+		</rect>
+	</clipPath>
+
+	<clipPath id="Clip_3">
+		<rect x="-240" y="-480"  width="480" height="960">
+		</rect>
+	</clipPath>
+	
+	<clipPath id="Clip_4">
+		<rect x="-480" y="-480"  width="960" height="960">
+		</rect>
+	</clipPath>
+	
+</defs>
+
+
+<use href="#Sikaku1" xlink:href="#Sikaku1" x="260" y="260" />
+<use href="#Sikaku2" xlink:href="#Sikaku2" x="260" y="260" />
+<use href="#Sikaku1" xlink:href="#Sikaku1" x="700" y="700" />
+<use href="#Sikaku2" xlink:href="#Sikaku2" x="700" y="700" />
+
+<use href="#maru1" xlink:href="#maru1" x="70" y="890" fill="#FFFFFF"/>
+<use href="#maru2" xlink:href="#maru2" x="170" y="890" fill="#FFFFFF"/>
+<use href="#maru3" xlink:href="#maru3" x="270" y="890" fill="#FFFFFF"/>
+
+<use href="#maru3" xlink:href="#maru3" x="690" y="70" fill="#FFFFFF"/>
+<use href="#maru2" xlink:href="#maru2" x="790" y="70" fill="#FFFFFF"/>
+<use href="#maru1" xlink:href="#maru1" x="890" y="70" fill="#FFFFFF"/>
+
+<use href="#maru4" xlink:href="#maru4" x="480" y="480" clip-path="url(#Clip_4)"/>
+
+</svg>

@@ -1,0 +1,176 @@
+<svg width="1200" height="675" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" overflow="hidden">
+
+<defs>
+
+<g id="署名" fill="#FFFFFF"  font-size="40px" style="font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;">
+	<text x="600" y="650" dominant-baseline="middle" text-anchor="middle">
+		白湯のお湯割り式　キャラ一覧
+	</text>
+</g>
+
+<linearGradient id="linearGradient174" x1="-3.2" x2="8" y1="637" y2="-521" gradientUnits="userSpaceOnUse">
+	<stop stop-color="#000000" offset="0"/>
+	<stop stop-color="#ffffff" offset="1"/>
+</linearGradient>
+
+<linearGradient id="linearGradient1" gradientTransform="rotate(90)">
+	<stop stop-color="#000000" offset="0.7"/>	
+	<stop stop-color="#ffffff" offset="1"/>
+</linearGradient>
+
+<filter id="blurFilter" x="0" y="0">
+	<feGaussianBlur in="SourceGraphic" stdDeviation="20" />
+</filter>
+
+<filter id="blurFilter_S" x="0" y="0">
+	<feGaussianBlur in="SourceGraphic" stdDeviation="2.5" />
+</filter>
+
+<filter id="blurFilter_T">
+	<feGaussianBlur stdDeviation="0 200" />
+</filter>
+
+<circle cx="0" cy="0" r="10">
+    <animate id="Start" attributeName="opacity" from="1" to="0" dur="0.3s" begin="0s"  fill="freeze"/>
+</circle>
+
+
+
+<g id="Table">
+<path d="m-650-650h1300l650 1300h-2600zm145 0-505 1300m650-1300-360 1300m504-1300-216 1300m360-1300-72 1300m216-1300 72 1300m72-1300 216 1300m-72-1300 360 1300m-215-1300 505 1300m-2310-1250h2600m-2600 75h2600m-2600 100h2600m-2600 125h2600m-2600 150h2600m-2600 200h2600m-2600 250h2600m-2600-930h2600" fill="none" stroke="url(#linearGradient174)" stroke-width="20" mask="url(#Daikei)" transform="translate(1, 0) scale(0.4, 0.15)"/>
+</g>
+
+<!--泡1-->
+<circle id="Awa_1" cx="0" cy="0" r="10" filter="url(#blurFilter_S)" opacity="0">
+	<animate id="Awa_1A" attributeName="cx" dur="3s" fill="freeze"
+		values="0; 10; -10; 10; 0" keyTimes="0; 0.25; 0.5; 0.75; 1" begin="Start.end;Awa_1AE.end+2s" additive="sum"/>
+	<animate attributeName="cy" dur="3s" fill="freeze"
+		values="0; -400" keyTimes="0; 1" begin="Start.end;Awa_1AE.end+2s" additive="sum"/>
+	<animate attributeName="r" dur="3s" fill="freeze"
+		values="0; 10; 8; 12; 15" keyTimes="0; 0.25; 0.5; 0.75; 1" begin="Start.end;Awa_1AE.end+2s" additive="sum"/>
+    <animate attributeName="opacity" from="0" to="0.1" dur="0.3s" begin="Start.end;Awa_1AE.end+2s" fill="freeze"/>
+    <animate id="Awa_1AE" attributeName="opacity" from="0.1" to="0" dur="1s" begin="Awa_1A.end-1s"  fill="freeze"/>
+</circle>
+
+<!--泡2-->
+<circle id="Awa_2" cx="0" cy="0" r="10" filter="url(#blurFilter_S)" opacity="0">
+	<animate id="Awa_2A" attributeName="cx" dur="3.5s" fill="freeze"
+		values="0; 15; -13; 14; 0" keyTimes="0; 0.25; 0.5; 0.75; 1" begin="Start.end+0.2s;Awa_2AE.end+1.5s" additive="sum"/>
+	<animate attributeName="cy" dur="3.5s" fill="freeze"
+		values="0; -500" keyTimes="0; 1" begin="Start.end+0.2s;Awa_2AE.end+1.5s" additive="sum"/>
+	<animate attributeName="r" dur="3.5s" fill="freeze"
+		values="0; 12; 9; 13; 16" keyTimes="0; 0.25; 0.5; 0.75; 1" begin="Start.end+0.2s;Awa_2AE.end+1.5s" additive="sum"/>
+    <animate attributeName="opacity" from="0" to="0.3" dur="0.3s" begin="Start.end+0.2s;Awa_2AE.end+1.5s" fill="freeze"/>
+    <animate id="Awa_2AE" attributeName="opacity" from="0.3" to="0" dur="1s" begin="Awa_2A.end-1s"  fill="freeze"/>
+</circle>
+
+<!--泡3-->
+<circle id="Awa_3" cx="0" cy="0" r="10" filter="url(#blurFilter_S)" opacity="0">
+	<animate id="Awa_3A" attributeName="cx" dur="4s" fill="freeze"
+		values="0; 15; -13; 14; 0" keyTimes="0; 0.25; 0.5; 0.75; 1" begin="Start.end+0.4s;Awa_3AE.end+2s" additive="sum"/>
+	<animate attributeName="cy" dur="4s" fill="freeze"
+		values="0; -450" keyTimes="0; 1" begin="Start.end+0.4s;Awa_3AE.end+2s" additive="sum"/>
+	<animate attributeName="r" dur="4s" fill="freeze"
+		values="0; 13; 11; 14; 17" keyTimes="0; 0.25; 0.5; 0.75; 1" begin="Start.end+0.4s;Awa_3AE.end+2s" additive="sum"/>
+    <animate attributeName="opacity" from="0" to="0.2" dur="0.3s" begin="Start.end+0.4s;Awa_3AE.end+2s" fill="freeze"/>
+    <animate id="Awa_3AE" attributeName="opacity" from="0.2" to="0" dur="1s" begin="Awa_3A.end-1s"  fill="freeze"/>
+</circle>
+
+<!--泡4-->
+<circle id="Awa_4" cx="0" cy="0" r="10" filter="url(#blurFilter_S)" opacity="0">
+	<animate id="Awa_4A" attributeName="cx" dur="3.8s" fill="freeze"
+		values="0; 15; -13; 14; 0" keyTimes="0; 0.25; 0.5; 0.75; 1" begin="Start.end+2s;Awa_4AE.end+2s" additive="sum"/>
+	<animate attributeName="cy" dur="3.8s" fill="freeze"
+		values="0; -300" keyTimes="0; 1" begin="Start.end+2s;Awa_4AE.end+2s" additive="sum"/>
+	<animate attributeName="r" dur="3.8s" fill="freeze"
+		values="0; 10; 8; 12; 14" keyTimes="0; 0.25; 0.5; 0.75; 1" begin="Start.end+2s;Awa_4AE.end+2s" additive="sum"/>
+    <animate attributeName="opacity" from="0" to="0.3" dur="0.3s" begin="Start.end+2s;Awa_4AE.end+2s" fill="freeze"/>
+    <animate id="Awa_4AE" attributeName="opacity" from="0.3" to="0" dur="1s" begin="Awa_4A.end-1s"  fill="freeze"/>
+</circle>
+
+
+<!--泡5-->
+<circle id="Awa_5" cx="0" cy="0" r="10" filter="url(#blurFilter_S)" opacity="0">
+	<animate id="Awa_5A" attributeName="cx" dur="4.1s" fill="freeze"
+		values="0; 15; -20; 18; 0" keyTimes="0; 0.25; 0.5; 0.75; 1" begin="Start.end+1.5s;Awa_5AE.end+2s" additive="sum"/>
+	<animate attributeName="cy" dur="4.1s" fill="freeze"
+		values="0; -450" keyTimes="0; 1" begin="Start.end+2s;Awa_5AE.end+1.5s" additive="sum"/>
+	<animate attributeName="r" dur="4.1s" fill="freeze"
+		values="0; 12; 10; 14; 16" keyTimes="0; 0.25; 0.5; 0.75; 1" begin="Start.end+1.5s;Awa_5AE.end+2s" additive="sum"/>
+    <animate attributeName="opacity" from="0" to="0.3" dur="0.3s" begin="Start.end+1.5s;Awa_5AE.end+2s" fill="freeze"/>
+    <animate id="Awa_5AE" attributeName="opacity" from="0.3" to="0" dur="1s" begin="Awa_5A.end-1s"  fill="freeze"/>
+</circle>
+
+<!--マスク-->
+<mask id="Daikei">
+<path d="m-650-650-650 1300h2600l-650-1300z" fill="#ffffff" stroke-width="20" transform="translate(1, 0) scale(1.01, 1.05)"/>
+</mask>
+
+
+<mask id="Mask_file">
+<rect id="file" x="0" y="0" width="1200" height="675" fill="#FFFFFF"/>
+<rect id="file" x="70" y="20" width="140" height="350" fill="url(#linearGradient1)"/>
+<rect id="file" x="220" y="20" width="140" height="350" fill="url(#linearGradient1)"/>
+<rect id="file" x="370" y="20" width="140" height="350" fill="url(#linearGradient1)"/>
+<rect id="file" x="520" y="20" width="140" height="350" fill="url(#linearGradient1)"/>
+<rect id="file" x="670" y="20" width="140" height="350" fill="url(#linearGradient1)"/>
+<rect id="file" x="820" y="20" width="140" height="350" fill="url(#linearGradient1)"/>
+<rect id="file" x="970" y="20" width="140" height="350" fill="url(#linearGradient1)"/>
+
+<use href="#Table" xlink:href="#Table" transform="translate(600, 550)" opacity="0.5">
+</use>
+
+<use href="#Table" xlink:href="#Table" transform="translate(1536, 1800)"  filter="url(#blurFilter_T)" opacity="1">
+	<animate id="pika1" attributeName="opacity" from="1" to="0" dur="2s" begin="0s;pika2.end+0s"/>
+	<animate id="pika2" attributeName="opacity" from="0" to="1" dur="2s" begin="pika1.end"/>
+</use>
+
+<use href="#Table" xlink:href="#Table" transform="translate(1536, 1800)"  filter="url(#blurFilter_T)" opacity="1">
+	<animate id="pika1" attributeName="opacity" from="0.3" to="1" dur="2s" begin="0s;pika2.end+0s"/>
+	<animate id="pika2" attributeName="opacity" from="1" to="0.3" dur="2s" begin="pika1.end"/>
+</use>
+
+<use href="#Table" xlink:href="#Table" transform="translate(1536, 1900)" filter="url(#blurFilter)" opacity="1">
+	<animate attributeName="opacity" from="0.5" to="1" dur="5s" begin="0s;pika2.end+0s"/>
+	<animate attributeName="opacity" from="1" to="0.5" dur="5s" begin="pika1.end"/>
+</use>
+
+<use href="#Table" xlink:href="#Table" transform="translate(1536, 1980)" filter="url(#blurFilter)" opacity="0.7">
+	<animate attributeName="opacity" from="0.7" to="0.5" dur="5s" begin="0s;pika2.end+0s"/>
+	<animate attributeName="opacity" from="0.5" to="0.7" dur="5s" begin="pika1.end"/>
+</use>
+
+<use href="#Awa_1" xlink:href="#Awa_1" x="60" y="400" transform="scale(0.5)"/>
+<use href="#Awa_1" xlink:href="#Awa_1" x="300" y="550" transform="scale(0.2)"/>
+<use href="#Awa_1" xlink:href="#Awa_1" x="210" y="680" transform="scale(1.2)"/>
+
+<use href="#Awa_2" xlink:href="#Awa_2" x="600" y="690" transform="scale(1)"/>
+<use href="#Awa_2" xlink:href="#Awa_2" x="700" y="700" transform="scale(1)"/>
+<use href="#Awa_2" xlink:href="#Awa_2" x="700" y="745" transform="scale(0.7)"/>
+<use href="#Awa_2" xlink:href="#Awa_2" x="600" y="679" transform="scale(1.2)"/>
+
+<use href="#Awa_3" xlink:href="#Awa_3" x="240" y="690" transform="scale(1)"/>
+<use href="#Awa_3" xlink:href="#Awa_3" x="120" y="745" transform="scale(0.7)"/>
+<use href="#Awa_3" xlink:href="#Awa_3" x="150" y="679" transform="scale(1.2)"/>
+
+<use href="#Awa_4" xlink:href="#Awa_4" x="700" y="690" transform="scale(1)"/>
+<use href="#Awa_4" xlink:href="#Awa_4" x="750" y="745" transform="scale(0.7)"/>
+<use href="#Awa_4" xlink:href="#Awa_4" x="560" y="670" transform="scale(1.2)"/>
+
+<use href="#Awa_4" xlink:href="#Awa_4" x="1050" y="690" transform="scale(1)"/>
+<use href="#Awa_4" xlink:href="#Awa_4" x="1020" y="745" transform="scale(0.7)"/>
+<use href="#Awa_4" xlink:href="#Awa_4" x="1130" y="679" transform="scale(1.2)"/>
+
+</mask>
+
+
+</defs>
+
+
+<rect id="file" x="0" y="0" width="3072" height="3960" fill="#EFEBDD" mask="url(#Mask_file)"/>
+
+<use href="#署名" xlink:href="#署名" x="0" y="0"/>
+
+
+</svg>
+

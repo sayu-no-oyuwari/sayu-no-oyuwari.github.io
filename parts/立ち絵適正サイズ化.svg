@@ -1,0 +1,13 @@
+<svg width="2016" height="2016" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" overflow="hidden">
+
+<defs>
+
+<g id="画像">
+	<image x="0" y="0"  href=""/>
+</g>
+</defs>
+
+<use href="#画像" xlink:href="#画像" x="0" y="0">
+</use>
+
+</svg>
