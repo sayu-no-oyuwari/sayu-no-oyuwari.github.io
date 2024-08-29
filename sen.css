@@ -298,7 +298,7 @@ summary {
   .nav-list-item {
     margin: 0.5em 0;
     padding: 0 1em;
-    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-size: clamp(0.7rem, 2vw, 2rem);
   }
 
   .main-image {
