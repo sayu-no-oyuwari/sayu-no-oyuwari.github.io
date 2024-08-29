@@ -449,14 +449,14 @@
         <h5>　アップロードした画像を</h5>
         <h5>サーバー等で保管することはありません。</h5>
         <h5></h5>
-        <h5>　jpg/pngは自動で2016×2016に縮小し</h5>
+        <h5>　jpg/pngは自動で2160×2160に縮小し</h5>
         <h5>webpに変換、SVGファイル内で使用します。</h5>
         <h5>元画像の縦横比を1:1にしておくと、</h5>
         <h5>好きな位置で出力できます。</h5>
         <h5></h5>
         <h5>apng/webpはアニメーションを活かす為</h5>
         <h5>縮小処理を行いません。</h5>
-        <h5>ご自身で2016×2016に変換してから使用してください。</h5>
+        <h5>ご自身で2160×2160に変換してから使用してください。</h5>
         <h5></h5>
         <h5>byte数が大きいファイルの処理には時間がかかります。</h5>
         <h5>ぜひ、Workの中を見ながらお待ちください。</h5>
@@ -742,7 +742,7 @@ function processImage(action) {
                 // JPEGまたはPNGの場合、縮小処理を行う
                 const canvas = document.createElement('canvas');
                 const ctx = canvas.getContext('2d');
-                const maxSize = 2016;
+                const maxSize = 2160;
                 let width = img.width;
                 let height = img.height;
 
