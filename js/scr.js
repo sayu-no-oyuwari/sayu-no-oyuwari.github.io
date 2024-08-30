@@ -1,23 +1,37 @@
 <script>
+document.addEventListener('DOMContentLoaded', function () {
+    // サムネイルSwiperの初期化
+    var thumbsSwiper = new Swiper('#thumbs', {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
 
-// メインのスライダーを初期化
-var slider = new Swiper('#slider', {
-  nextButton: '.swiper-button-next',  // 次へボタンのセレクタを指定
-  prevButton: '.swiper-button-prev'   // 前へボタンのセレクタを指定
+    // メインのSwiperの初期化
+    var mainSwiper = new Swiper('#slider', {
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        thumbs: {
+            swiper: thumbsSwiper, // サムネイルSwiperとの連携
+        },
+        // 自動再生オプションを追加（必要に応じて調整）
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        // ループ設定でスライドを無限にループ
+        loop: true,
+        // キーボードナビゲーションの追加
+        keyboard: {
+            enabled: true,
+        },
+    });
 });
 
-// サムネイルスライダーを初期化
-var thumbs = new Swiper('#thumbs', {
-  centeredSlides: true,               // スライドを中央に配置
-  spaceBetween: 10,                   // スライド間のスペースを設定
-  slidesPerView: "auto",              // 表示されるスライド数を自動調整
-  touchRatio: 0.2,                    // スワイプの感度を調整
-  slideToClickedSlide: true           // サムネイルクリックでメインスライドに移動
-});
-
-// メインスライダーとサムネイルスライダーを同期させる
-slider.params.control = thumbs;
-thumbs.params.control = slider;
 
 
 
