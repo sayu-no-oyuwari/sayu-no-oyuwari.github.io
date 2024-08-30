@@ -116,14 +116,14 @@ summary {
 
 .main-text-h3 {
   font-size: clamp(1rem, 3vw, 2em);
-  margin: 1em 4vw;
+  margin: 1em 3vw;
   padding: 0 1em;
 }
 
 .main-text-h4 {
-  font-size: clamp(0.8rem, 3vw, 2em);
-  margin: 10px 0;
-  padding: 0 1.5em;
+  font-size: clamp(0.8rem, 2vw, 1.5em);
+  margin: 1em 6vw;
+  padding: 0 1em;
   background-color: #3A555F;
 }
 
