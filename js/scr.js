@@ -1,4 +1,4 @@
-<script>
+
 document.addEventListener('DOMContentLoaded', function () {
     // サムネイルSwiperの初期化
     var thumbsSwiper = new Swiper('#thumbs', {
@@ -125,4 +125,3 @@ function editAndDownloadSVG(base64data, action, mimeType) {
             alert('SVGファイルの読み込みまたは編集中にエラーが発生しました。');
         });
 }
-</script>
