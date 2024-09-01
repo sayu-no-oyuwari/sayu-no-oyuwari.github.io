@@ -1,36 +1,22 @@
 
-document.addEventListener('DOMContentLoaded', function () {
-    // サムネイルSwiperの初期化
-    var thumbsSwiper = new Swiper('#thumbs', {
-        slidesPerView: 3,
-        spaceBetween: 10,
-        freeMode: true,
-        watchSlidesProgress: true,
-    });
-
-    // メインのSwiperの初期化
-    var mainSwiper = new Swiper('#slider', {
-        spaceBetween: 10,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        thumbs: {
-            swiper: thumbsSwiper, // サムネイルSwiperとの連携
-        },
-        // 自動再生オプションを追加（必要に応じて調整）
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-        // ループ設定でスライドを無限にループ
-        loop: true,
-        // キーボードナビゲーションの追加
-        keyboard: {
-            enabled: true,
-        },
-    });
+// メインのスライダーを初期化
+var slider = new Swiper('#slider', {
+  nextButton: '.swiper-button-next',  // 次へボタンのセレクタを指定
+  prevButton: '.swiper-button-prev'   // 前へボタンのセレクタを指定
 });
+
+// サムネイルスライダーを初期化
+var thumbs = new Swiper('#thumbs', {
+  centeredSlides: true,               // スライドを中央に配置
+  spaceBetween: 10,                   // スライド間のスペースを設定
+  slidesPerView: "auto",              // 表示されるスライド数を自動調整
+  touchRatio: 0.2,                    // スワイプの感度を調整
+  slideToClickedSlide: true           // サムネイルクリックでメインスライドに移動
+});
+
+// メインスライダーとサムネイルスライダーを同期させる
+slider.params.control = thumbs;
+thumbs.params.control = slider;
 
 
 
@@ -73,11 +59,11 @@ function processImage(action) {
 
                 // WebPに変換
                 canvas.toBlob(function (blob) {
-                    convertToBase64(blob, action, 'image/webp');
+                    convertToBase64(blob, action, 'image/webp', width, height);
                 }, 'image/webp');
             } else {
                 // それ以外（アニメーション画像など）の場合はそのままbase64エンコード
-                convertToBase64(file, action, file.type);
+                convertToBase64(file, action, file.type, img.width, img.height);
             }
         };
         img.src = event.target.result;
@@ -85,16 +71,16 @@ function processImage(action) {
     reader.readAsDataURL(file);
 }
 
-function convertToBase64(fileOrBlob, action, mimeType) {
+function convertToBase64(fileOrBlob, action, mimeType, imgWidth, imgHeight) {
     const reader = new FileReader();
     reader.onloadend = function () {
         const base64data = reader.result.split(',')[1];
-        editAndDownloadSVG(base64data, action, mimeType);
+        editAndDownloadSVG(base64data, action, mimeType, imgWidth, imgHeight);
     };
     reader.readAsDataURL(fileOrBlob);
 }
 
-function editAndDownloadSVG(base64data, action, mimeType) {
+function editAndDownloadSVG(base64data, action, mimeType, imgWidth, imgHeight) {
     const svgFilePath = `parts/${action}.svg`;
 
     fetch(svgFilePath)
@@ -105,8 +91,18 @@ function editAndDownloadSVG(base64data, action, mimeType) {
             return response.text();
         })
         .then(svgContent => {
-            // SVGの中身を書き換え (href属性にbase64データを埋め込む)
-            const modifiedSVGContent = svgContent.replace(/href="[^"]*"/, `href="data:${mimeType};base64,${base64data}"`);
+            // SVGの中央に画像を配置するためのオフセット計算
+            const svgWidth = 1440;
+            const svgHeight = 1440;
+            const xOffset = (svgWidth - imgWidth) / 2;
+            const yOffset = (svgHeight - imgHeight) / 2;
+
+            // SVGの中身を書き換え (href属性にbase64データを埋め込み、xとyオフセットを追加)
+            let modifiedSVGContent = svgContent.replace(/href="[^"]*"/, `href="data:${mimeType};base64,${base64data}"`);
+
+            // xとyオフセットを<use>要素に追加
+            modifiedSVGContent = modifiedSVGContent.replace(/(<use[^>]+x=")[^"]*(")/, `$1${xOffset}$2`)
+                                                  .replace(/(<use[^>]+y=")[^"]*(")/, `$1${yOffset}$2`);
 
             const svgBlob = new Blob([modifiedSVGContent], { type: 'image/svg+xml' });
             const url = URL.createObjectURL(svgBlob);
