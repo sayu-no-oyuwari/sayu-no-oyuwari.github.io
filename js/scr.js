@@ -97,12 +97,12 @@ function editAndDownloadSVG(base64data, action, mimeType, imgWidth, imgHeight) {
             const xOffset = (svgWidth - imgWidth) / 2;
             const yOffset = (svgHeight - imgHeight) / 2;
 
-            // SVGの中身を書き換え (href属性にbase64データを埋め込み、xとyオフセットを追加)
-            let modifiedSVGContent = svgContent.replace(/href="[^"]*"/, `href="data:${mimeType};base64,${base64data}"`);
+            // 最初の<image>タグのhref属性にbase64データを埋め込み、xとyオフセットを設定
+            let modifiedSVGContent = svgContent.replace(/(<image[^>]*href=")[^"]*"/, `$1data:${mimeType};base64,${base64data}"`);
 
-            // xとyオフセットを<use>要素に追加
-            modifiedSVGContent = modifiedSVGContent.replace(/(<use[^>]+x=")[^"]*(")/, `$1${xOffset}$2`)
-                                                  .replace(/(<use[^>]+y=")[^"]*(")/, `$1${yOffset}$2`);
+            // 最初の<image>タグのxとy属性を設定
+            modifiedSVGContent = modifiedSVGContent.replace(/(<image[^>]+x=")[^"]*"/, `$1${xOffset}"`)
+                                                  .replace(/(<image[^>]+y=")[^"]*"/, `$1${yOffset}"`);
 
             const svgBlob = new Blob([modifiedSVGContent], { type: 'image/svg+xml' });
             const url = URL.createObjectURL(svgBlob);
@@ -120,4 +120,5 @@ function editAndDownloadSVG(base64data, action, mimeType, imgWidth, imgHeight) {
             console.error('エラーが発生しました:', error);
             alert('SVGファイルの読み込みまたは編集中にエラーが発生しました。');
         });
+
 }
