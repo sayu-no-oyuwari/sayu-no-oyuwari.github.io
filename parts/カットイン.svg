@@ -28,20 +28,20 @@
 
 </defs>
 
-<rect x="0" y="0" width="1440" height="1440" fill="#808080"/>
-
 <use id="カットイン" href="#cut" xlink:href="#cut" x="720" y="720" fill="#2F2725">
 </use>
 
 <g  mask="url(#mask)">
 <use id="絵" href="#画像" xlink:href="#画像" x="0" y="0">
-	<animate attributeName="x"  from="540" to="-100" dur="1s" fill="freeze" begin="Start.end + 0s"/>
-	<animate attributeName="y"  from="360" to="-100" dur="1s" fill="freeze" begin="Start.end + 0s"/>
+	<animate attributeName="x"  from="1080" to="0" dur="1s" fill="freeze" begin="Start.end + 0s"/>
+	<animate attributeName="y"  from="480" to="0" dur="1s" fill="freeze" begin="Start.end + 0s"/>
 	<animateTransform attributeName="transform" type="rotate"  begin="Start.end + 0s" dur="1s" fill="freeze" from="5,0,0" to="0,0,0" calcMode="spline"  keySplines="0.0 0.95 1.0 1.0"/>
-	<animate attributeName="x"  from="-100" to="-1440" dur="0.6s" fill="freeze" begin="Start.end + 2.4s"/>
-	<animate attributeName="y"  from="-100" to="-360" dur="0.6s" fill="freeze" begin="Start.end + 2.4s"/>
+	<animate attributeName="x"  from="0" to="-2160" dur="0.6s" fill="freeze" begin="Start.end + 2.4s"/>
+	<animate attributeName="y"  from="0" to="-480" dur="0.6s" fill="freeze" begin="Start.end + 2.4s"/>
 	<animateTransform attributeName="transform" type="rotate"  begin="Start.end + 2.4s" dur="0.6s" fill="freeze" from="0,0,0" to="-5,0,0" calcMode="spline"  keySplines="0.0 0.95 1.0 1.0"/>
 </use>
 
 </g>
+
 </svg>
+
