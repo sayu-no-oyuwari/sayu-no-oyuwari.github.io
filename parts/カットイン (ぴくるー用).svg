@@ -14,29 +14,27 @@
 
 <!--素材-->
 
-<rect id="cut" fill-opacity="1" x="-720" y="-576" width="1440" height="1152" transform="skewY(10)">
+<rect id="cut" fill-opacity="1" x="-300" y="-300" width="600" height="600">
 	<animateTransform id="test1" attributeName="transform" type="scale" values="1,0;1,0.4;1,0.9;1,0.95;1,1;1,0" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="3s" fill="freeze" begin="Start.end + 0s" additive="sum"/>
 	<animateTransform id="test2" attributeName="transform" type="translate" values="0,0;0,15;0,-6;0,10;0,0;0,0" keyTimes="0;0.1;0.2;0.3;0.4;1" dur="3s" fill="freeze" begin="Start.end + 0s" additive="sum"/>
 </rect>
 
 <mask id="mask">
-<rect x="0" y="0" width="600" height="1440" fill="#000000"/>
-<use id="カットイン" href="#cut" xlink:href="#cut" fill="#FFFFFF" x="720" y="720">
+<rect x="0" y="0" width="600" height="600" fill="#000000"/>
+<use id="カットイン" href="#cut" xlink:href="#cut" fill="#FFFFFF" x="300" y="300">
 </use>
 
 </mask>
 
 </defs>
 
-<use id="カットイン" href="#cut" xlink:href="#cut" x="720" y="720" fill="#2F2725">
+<use id="カットイン" href="#cut" xlink:href="#cut" x="300" y="300" fill="#2F2725">
 </use>
 
 <g  mask="url(#mask)">
-<use id="絵" href="#画像" xlink:href="#画像" x="0" y="0">
-	<animate attributeName="x"  from="1080" to="420" dur="1s" fill="freeze" begin="Start.end + 0s"/>
-	<animateTransform attributeName="transform" type="rotate"  begin="Start.end + 0s" dur="1s" fill="freeze" from="5,0,0" to="0,0,0" calcMode="spline"  keySplines="0.0 0.95 1.0 1.0"/>
-	<animate attributeName="x"  from="420" to="-2160" dur="0.6s" fill="freeze" begin="Start.end + 2.4s"/>
-	<animateTransform attributeName="transform" type="rotate"  begin="Start.end + 2.4s" dur="0.6s" fill="freeze" from="0,0,0" to="-5,0,0" calcMode="spline"  keySplines="0.0 0.95 1.0 1.0"/>
+<use id="絵" href="#画像" xlink:href="#画像" x="0" y="-420">
+	<animate attributeName="x"  from="1080" to="-420" dur="1s" fill="freeze" begin="Start.end + 0s"/>
+	<animate attributeName="x"  from="-420" to="-2160" dur="0.6s" fill="freeze" begin="Start.end + 2.4s"/>
 </use>
 
 </g>
