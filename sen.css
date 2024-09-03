@@ -133,14 +133,6 @@ summary {
   padding: 0.2em 0.2em;
 }
 
-.main-text-Linktext {
-  font-size: 2em;
-  margin: 1em 0;
-  padding: 0 1em;
-  text-align: center;
-  text-decoration: underline;
-}
-
 /* ハイライト */
 .highlight {
   font-size: clamp(2rem, 2.5vw, 3.2em);
@@ -194,7 +186,11 @@ summary {
   z-index: 10;
   position: relative;
 }
-
+.flex-item a {
+  display: inline-flex; /* フレックスボックスのインラインバージョンを使用 */
+  justify-content: center; /* 水平方向の中央揃え */
+  width: 100%; /* 必要に応じて幅を設定 */
+}
 .flex-item img {
   width: 100%;
   height: auto;
