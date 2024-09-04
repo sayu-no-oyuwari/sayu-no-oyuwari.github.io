@@ -186,6 +186,15 @@ summary {
   z-index: 10;
   position: relative;
 }
+.flex-item h6 {
+  font-family: 'Hina Mincho', serif;
+  font-size: clamp(0.6rem, 0.7vw, 2em);
+  margin: 3px 0;
+  padding: 0.2em 0vw;
+  color: #68ABC4;
+  z-index: 10;
+  position: relative;
+}
 .flex-item a {
   display: inline-flex; /* フレックスボックスのインラインバージョンを使用 */
   justify-content: center; /* 水平方向の中央揃え */
