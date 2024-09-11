@@ -1,0 +1,234 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" overflow="hidden">
+<defs>
+
+  <linearGradient id="Gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+
+    <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:1" />
+  </linearGradient>
+
+  <linearGradient id="Gradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+    <stop offset="30%" style="stop-color:#FFFFFF;stop-opacity:1" />
+    <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+  </linearGradient>
+
+  
+  <filter id="blurFilter" x="0" y="0">
+	<feGaussianBlur stdDeviation="5 5" />
+  </filter>
+  
+    <!-- ブレンドモードのフィルターを定義 -->
+    <filter id="screenFilter">
+      <feBlend mode="screen" in="SourceGraphic" in2="BackgroundImage" />
+    </filter>
+  
+  <rect id="window" x="-65" y="-125" width="130" height="250"/>
+  <rect id="waku" x="-48" y="-72" width="96" height="168"/>
+  <rect id="ran" x="-216" y="-144" width="432" height="288"/>
+  <rect id="PCran" x="-48" y="-48" width="96" height="96"/>
+
+<g id="長剣">
+	<path d="M 0,-250 L 7,-220 C 7,-80 3,-20 0,0 C -3,-20 -7,-80 -7,-220 L 0,-250 Z" transform="translate(0, -100)">
+		<animateTransform id="5" attributeName="transform" attributeType="XML" type="translate" from="0,0" to="0,-150" dur="2s" fill="freeze" begin="0s;6.end + 0s"/>
+		<animateTransform id="6" attributeName="transform" attributeType="XML" type="translate" from="0,-150" to="0,0" dur="5s" fill="freeze" begin="5.end + 0s"/>
+	</path>
+</g>
+<g id="短剣">
+	<path d="M 0,-150 L 7,-120 C 7,-80 3,-20 0,0 C -3,-20 -7,-80 -7,-120 L 0,-150 Z" transform="translate(0, -100)">
+		<animateTransform id="5" attributeName="transform" attributeType="XML" type="translate" from="0,0" to="0,-200" dur="2s" fill="freeze" begin="0s;6.end + 0s"/>
+		<animateTransform id="6" attributeName="transform" attributeType="XML" type="translate" from="0,-200" to="0,0" dur="5s" fill="freeze" begin="5.end + 0s"/>
+	</path>
+</g>
+
+<g id="剣円">
+
+	<use href="#長剣" xlink:href="#長剣"/>
+	<use href="#長剣" xlink:href="#長剣" transform="rotate(18)"/>
+	<use href="#長剣" xlink:href="#長剣" transform="rotate(36)"/>
+	<use href="#長剣" xlink:href="#長剣" transform="rotate(54)"/>
+	<use href="#長剣" xlink:href="#長剣" transform="rotate(72)"/>
+	<use href="#長剣" xlink:href="#長剣" transform="rotate(90)"/>
+	<use href="#長剣" xlink:href="#長剣" transform="rotate(108)"/>
+	<use href="#長剣" xlink:href="#長剣" transform="rotate(126)"/>
+	<use href="#長剣" xlink:href="#長剣" transform="rotate(144)"/>
+	<use href="#長剣" xlink:href="#長剣" transform="rotate(162)"/>
+	<use href="#長剣" xlink:href="#長剣" transform="rotate(180)"/>
+	<use href="#長剣" xlink:href="#長剣" transform="rotate(198)"/>
+	<use href="#長剣" xlink:href="#長剣" transform="rotate(216)"/>
+	<use href="#長剣" xlink:href="#長剣" transform="rotate(234)"/>
+	<use href="#長剣" xlink:href="#長剣" transform="rotate(252)"/>
+	<use href="#長剣" xlink:href="#長剣" transform="rotate(270)"/>
+	<use href="#長剣" xlink:href="#長剣" transform="rotate(288)"/>
+	<use href="#長剣" xlink:href="#長剣" transform="rotate(306)"/>
+	<use href="#長剣" xlink:href="#長剣" transform="rotate(324)"/>
+	<use href="#長剣" xlink:href="#長剣" transform="rotate(342)"/>
+
+	<use href="#短剣" xlink:href="#短剣" transform="rotate(9)"/>
+	<use href="#短剣" xlink:href="#短剣" transform="rotate(27)"/>
+	<use href="#短剣" xlink:href="#短剣" transform="rotate(45)"/>
+	<use href="#短剣" xlink:href="#短剣" transform="rotate(63)"/>
+	<use href="#短剣" xlink:href="#短剣" transform="rotate(81)"/>
+	<use href="#短剣" xlink:href="#短剣" transform="rotate(99)"/>
+	<use href="#短剣" xlink:href="#短剣" transform="rotate(117)"/>
+	<use href="#短剣" xlink:href="#短剣" transform="rotate(135)"/>
+	<use href="#短剣" xlink:href="#短剣" transform="rotate(153)"/>
+	<use href="#短剣" xlink:href="#短剣" transform="rotate(171)"/>
+	<use href="#短剣" xlink:href="#短剣" transform="rotate(189)"/>
+	<use href="#短剣" xlink:href="#短剣" transform="rotate(207)"/>
+	<use href="#短剣" xlink:href="#短剣" transform="rotate(225)"/>
+	<use href="#短剣" xlink:href="#短剣" transform="rotate(243)"/>
+	<use href="#短剣" xlink:href="#短剣" transform="rotate(261)"/>
+	<use href="#短剣" xlink:href="#短剣" transform="rotate(279)"/>
+	<use href="#短剣" xlink:href="#短剣" transform="rotate(297)"/>
+	<use href="#短剣" xlink:href="#短剣" transform="rotate(315)"/>
+	<use href="#短剣" xlink:href="#短剣" transform="rotate(333)"/>
+	<use href="#短剣" xlink:href="#短剣" transform="rotate(351)"/>
+
+</g>
+
+<use id="剣左" href="#剣円" xlink:href="#剣円" >
+   <animateTransform attributeName="transform" type="rotate" begin="0s" dur="60s" fill="freeze" from="360" to="0" repeatCount="indefinite"/>
+</use>
+
+<use id="剣右" href="#剣円" xlink:href="#剣円" >
+   <animateTransform attributeName="transform" type="rotate" begin="0s" dur="60s" fill="freeze" from="0" to="360" repeatCount="indefinite"/>
+</use>
+
+<use id="剣小" href="#剣円" xlink:href="#剣円" transform="scale(0.5 0.5)">
+</use>
+
+
+  <g id="枠" fill="none">
+  
+  <rect x="0" y="0" width="100%" height="100%"/>
+  
+  <g id="欄外" opacity="0.5">
+  
+  <use href="#ran" xlink:href="#ran" x="240" y="228"/>
+  <use href="#ran" xlink:href="#ran" x="240" y="540"/>
+  <use href="#ran" xlink:href="#ran" x="240" y="852"/>
+  <use href="#ran" xlink:href="#ran" x="1680" y="228"/>
+  <use href="#ran" xlink:href="#ran" x="1680" y="540"/>
+  <use href="#ran" xlink:href="#ran" x="1680" y="852"/>
+
+
+  <use href="#PCran" xlink:href="#ran" x="720" y="960"/>
+  <use href="#PCran" xlink:href="#ran" x="840" y="960"/>
+
+  <use href="#PCran" xlink:href="#ran" x="1080" y="960"/>
+  <use href="#PCran" xlink:href="#ran" x="1200" y="960"/>
+
+  
+
+  <use href="#waku" xlink:href="#waku" x="720" y="664"/>
+  <use href="#waku" xlink:href="#waku" x="840" y="644"/>
+
+  <use href="#waku" xlink:href="#waku" x="1080" y="644"/>
+  <use href="#waku" xlink:href="#waku" x="1200" y="664"/>
+
+  </g>
+  
+  </g>
+  
+  <g id="枠反射" fill="none">
+
+  <path d="M 672 780 h 96 l -45 124 h -126 Z" mask="url(#下)"/>
+  <path d="M 792 760 h 96 l -15 124 h -121 Z" mask="url(#中)"/>
+
+  <path d="M 1032 760 h 96 l 35 124 h -111 Z" mask="url(#中)"/>
+  <path d="M 1152 780 h 96 l 75 124 h -126 Z" mask="url(#下)"/>
+
+  </g>
+
+  <mask id ="窓外">
+  
+  <rect x="0" y="0" width="100%" height="100%" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="5" />
+  <g id="窓" fill="#000000">
+  <circle cx="960" cy="312" r="105"/>
+  <use href="#window" xlink:href="#window" x="672" y="600" />
+  <use href="#window" xlink:href="#window" x="816" y="600" />
+  <use href="#window" xlink:href="#window" x="960" y="600" />
+  <use href="#window" xlink:href="#window" x="1104" y="600" />
+  <use href="#window" xlink:href="#window" x="1248" y="600" />
+  
+  </g>
+
+  <g id="窓反射" fill="url(#Gradient)">
+  
+  <path d="M 607 740 h 130 l -60 130 h -180 Z"/>
+  <path d="M 751 740 h 130 l -20 130 h -166 Z"/>
+  <path d="M 895 740 h 130 l 20 130 h -166 Z"/>
+  <path d="M 1039 740 h 130 l 60 130 h -166 Z"/>
+  <path d="M 1183 740 h 130 l 100 130 h -166 Z"/>
+  </g>
+    
+  <use href="#剣小" xlink:href="#剣小" x="960" y="312"/>
+  <use href="#剣左" xlink:href="#剣左" x="480" y="170" opacity="0.2"/>
+  <use href="#剣右" xlink:href="#剣右" x="1440" y="170" opacity="0.2"/>
+  </mask>
+  
+  <mask id ="上">
+  <rect x="0" y="600" width="1920" height="270" fill="url(#Gradient2)" />
+  </mask>
+  <mask id ="中">
+  <rect x="0" y="620" width="1920" height="270" fill="url(#Gradient2)" />
+  </mask>
+  <mask id ="下">
+  <rect x="0" y="640" width="1920" height="270" fill="url(#Gradient2)" />
+  </mask>
+  
+
+</defs>
+
+
+
+  <rect x="0" y="0" width="100%" height="100%" fill="none" stroke="#F46860" stroke-width="5" stroke-dasharray="2,15" stroke-linecap="round" />
+  <rect x="480" y="730" width="960" height="150" fill="#000000" stroke="#808080" opacity="0">
+  	<animate id="1" attributeName="opacity" from="0.4" to="0.2" dur="5s" begin="0s;2.end + 0s" fill="freeze"/>
+  	<animate id="2" attributeName="opacity" from="0.2" to="0.4" dur="5s" begin="1.end + 0s" fill="freeze"/>
+  </rect>
+  
+  <g fill="#D9E9E5" stroke="#D9E9E5">
+  <use href="#剣右" xlink:href="#剣右" x="0" y="540" opacity="0.6"/>
+  <use href="#剣左" xlink:href="#剣左" x="1920" y="540" opacity="0.6"/>
+  
+  <path d="M1220,25 700,25" stroke-width="8"   opacity="0.5"/>
+  <path d="M1320,50 600,50" stroke-width="10"   opacity="0.5"/>
+  <path d="M1420,85 500,85" stroke-width="12"   opacity="0.5"/>
+  <path d="M1520,130 400,130" stroke-width="15"   opacity="0.5"/>
+  
+  <path d="M1220,1055 700,1055" stroke-width="8"   opacity="0.5"/>
+  <path d="M1320,1030 600,1030" stroke-width="10"   opacity="0.5"/>
+  <path d="M1420,995 500,995" stroke-width="12"   opacity="0.5"/>
+  <path d="M1520,950 400,950" stroke-width="15"   opacity="0.5"/>
+  
+  <rect x="360" y="170" width="1200" height="720" mask="url(#窓外)" opacity="0.5"/>
+  <rect x="480" y="170" width="960" height="720" mask="url(#窓外)"/>
+  </g>
+  
+  
+  <use href="#枠" xlink:href="#枠" stroke="#F4F2DB" stroke-width="4"/>
+  
+  <g filter="url(#screenFilter)">
+  <use id="スクリーン" href="#枠" xlink:href="#枠" stroke="#D9E9E5" stroke-width="6" filter="url(#blurFilter)" opacity="0">
+    <animate id="3" attributeName="opacity" from="0.9" to="0.4" dur="2s" begin="0s;4.end + 0s" fill="freeze"/>
+  	<animate id="4" attributeName="opacity" from="0.4" to="0.9" dur="2s" begin="3.end + 0s" fill="freeze"/>
+  </use>
+  </g>
+  
+  
+  
+  <use href="#枠反射" xlink:href="#枠反射" stroke="#F4F2DB" stroke-width="4"/>
+  
+  <g filter="url(#screenFilter)">
+  <use id="スクリーン" href="#枠反射" xlink:href="#枠" stroke="#D9E9E5" stroke-width="6" filter="url(#blurFilter)" opacity="0">
+    <animate id="3" attributeName="opacity" from="0.9" to="0.4" dur="2s" begin="0s;4.end + 0s" fill="freeze"/>
+  	<animate id="4" attributeName="opacity" from="0.4" to="0.9" dur="2s" begin="3.end + 0s" fill="freeze"/>
+  </use>
+  </g>
+  
+
+
+
+</svg>

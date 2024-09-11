@@ -34,7 +34,6 @@ function processImage(action) {
         const img = new Image();
         img.onload = function () {
             if (file.type === 'image/jpeg' || file.type === 'image/png') {
-                // JPEGまたはPNGの場合、縮小処理を行う
                 const canvas = document.createElement('canvas');
                 const ctx = canvas.getContext('2d');
                 const maxSize = 1440;
@@ -57,12 +56,10 @@ function processImage(action) {
                 canvas.height = height;
                 ctx.drawImage(img, 0, 0, width, height);
 
-                // WebPに変換
                 canvas.toBlob(function (blob) {
                     convertToBase64(blob, action, 'image/webp', width, height);
                 }, 'image/webp');
             } else {
-                // それ以外（アニメーション画像など）の場合はそのままbase64エンコード
                 convertToBase64(file, action, file.type, img.width, img.height);
             }
         };
@@ -91,29 +88,25 @@ function editAndDownloadSVG(base64data, action, mimeType, imgWidth, imgHeight) {
             return response.text();
         })
         .then(svgContent => {
-            // SVGの中央に画像を配置するためのオフセット計算
-            const svgWidth = 1440;
-            const svgHeight = 1440;
-            const xOffset = (svgWidth - imgWidth) / 2;
-            const yOffset = (svgHeight - imgHeight) / 2;
-
-            // 正確な <image> タグの href 属性に base64 データを埋め込み、x と y オフセットを設定
+            // hrefにbase64データを埋め込む
             let modifiedSVGContent = svgContent.replace(/(<image\b[^>]*href=")[^"]*(")/, `$1data:${mimeType};base64,${base64data}$2`);
 
-            // 正確な <image> タグの x と y 属性を設定（ <use> タグを除外）
+            // 中心を (0, 0) に配置するために、x と y を調整
+            const xOffset = -(imgWidth / 2);
+            const yOffset = -(imgHeight / 2);
+
+            // x と y 属性を中心に合わせる
             modifiedSVGContent = modifiedSVGContent.replace(/(<image\b[^>]*x=")[^"]*(")/, `$1${xOffset}$2`)
                                                   .replace(/(<image\b[^>]*y=")[^"]*(")/, `$1${yOffset}$2`);
 
             const svgBlob = new Blob([modifiedSVGContent], { type: 'image/svg+xml' });
             const url = URL.createObjectURL(svgBlob);
 
-            // 自動的にダウンロードを開始
             const downloadLink = document.createElement('a');
             downloadLink.href = url;
             downloadLink.download = `${action}.svg`;
             downloadLink.click();
 
-            // ダウンロードが完了した後にURLオブジェクトを解放
             URL.revokeObjectURL(url);
         })
         .catch(error => {
