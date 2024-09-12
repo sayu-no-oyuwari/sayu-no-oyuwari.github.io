@@ -1,22 +1,38 @@
 
-// メインのスライダーを初期化
-var slider = new Swiper('#slider', {
-  nextButton: '.swiper-button-next',  // 次へボタンのセレクタを指定
-  prevButton: '.swiper-button-prev'   // 前へボタンのセレクタを指定
-});
+  // サムネイルリスト
+  var thumbnails = document.querySelectorAll('.thumb');
+  var currentIndex = 0;
 
-// サムネイルスライダーを初期化
-var thumbs = new Swiper('#thumbs', {
-  centeredSlides: true,               // スライドを中央に配置
-  spaceBetween: 10,                   // スライド間のスペースを設定
-  slidesPerView: "auto",              // 表示されるスライド数を自動調整
-  touchRatio: 0.2,                    // スワイプの感度を調整
-  slideToClickedSlide: true           // サムネイルクリックでメインスライドに移動
-});
+  // サムネイルをクリックした時に動画を切り替える処理
+  thumbnails.forEach(function(thumb, index) {
+    thumb.addEventListener('click', function() {
+      currentIndex = index;
+      changeVideo(currentIndex);
+    });
+  });
 
-// メインスライダーとサムネイルスライダーを同期させる
-slider.params.control = thumbs;
-thumbs.params.control = slider;
+  // 次の動画に移動する関数
+  function nextVideo() {
+    currentIndex = (currentIndex + 1) % thumbnails.length; // インデックスをループさせる
+    changeVideo(currentIndex);
+  }
+
+  // 前の動画に移動する関数
+  function prevVideo() {
+    currentIndex = (currentIndex - 1 + thumbnails.length) % thumbnails.length; // インデックスをループさせる
+    changeVideo(currentIndex);
+  }
+
+  // 動画を切り替える共通の処理
+  function changeVideo(index) {
+    var videoId = thumbnails[index].getAttribute('data-video');
+    var iframe = document.getElementById('main-video');
+    iframe.src = 'https://www.youtube.com/embed/' + videoId;
+  }
+
+  // ボタンにイベントリスナーを追加
+  document.getElementById('next-btn').addEventListener('click', nextVideo);
+  document.getElementById('prev-btn').addEventListener('click', prevVideo);
 
 
 

@@ -737,51 +737,37 @@
 
 <!-- 動画(トピックス) -->
 <article> 
+  <h2 class="main-text-h2"><a name="Topics">Topics</a></h2>
 
- <h2 class="main-text-h2"><a name="Topics">Topics</a></h2>
-  <div id="slider" class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-  <iframe src="https://www.youtube.com/embed/B2jmUwaxWOI?si=wdNzVTZGi6P0QUcR" title="恋堕" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-      <div class="swiper-slide">
-  <iframe src="https://www.youtube.com/embed/-BIjkXtcTTY?si=xp4rtW0dUtXwEMLK" title="脱むじ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-      <div class="swiper-slide">
-  <iframe src="https://www.youtube.com/embed/PVwoFVt42rQ?si=cHrV37ojFfhFYxCM" title="海探索部屋" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-      <div class="swiper-slide">
-  <iframe src="https://www.youtube.com/embed/elQpG0xlhjY?si=Yrmk47jVETs7PEjM" title="和風部屋" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-      <div class="swiper-slide">
-  <iframe src="https://www.youtube.com/embed/54kY51YkZWM?si=ap6JexxMouSxOfFw" title="反射部屋" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-    </div>
-    <div class="swiper-button-prev swiper-button-white"></div>
-    <div class="swiper-button-next swiper-button-white"></div>
+  <!-- メインの動画プレーヤー -->
+  <div id="main-video-container" style="position: relative; width: 100%; max-width: 900px; margin: 0 auto;">
+    <iframe id="main-video" width="100%" height="500" src="https://www.youtube.com/embed/B2jmUwaxWOI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!-- 左右の操作ボタン -->
+    <button id="prev-btn" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background-color: rgba(0, 0, 0, 0.5); color: white; border: none; padding: 10px; cursor: pointer;">&#10094;</button>
+    <button id="next-btn" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background-color: rgba(0, 0, 0, 0.5); color: white; border: none; padding: 10px; cursor: pointer;">&#10095;</button>
   </div>
 
-  <div id="thumbs" class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="https://img.youtube.com/vi/B2jmUwaxWOI/mqdefault.jpg">
-      </div>
-      <div class="swiper-slide">
-        <img src="https://img.youtube.com/vi/-BIjkXtcTTY/mqdefault.jpg">
-      </div>
-      <div class="swiper-slide">
-        <img src="https://img.youtube.com/vi/PVwoFVt42rQ/mqdefault.jpg">
-      </div>
-      <div class="swiper-slide">
-        <img src="https://img.youtube.com/vi/elQpG0xlhjY/mqdefault.jpg">
-      </div>
-      <div class="swiper-slide">
-        <img src="https://img.youtube.com/vi/54kY51YkZWM/mqdefault.jpg">
-      </div>
+  <!-- サムネイル一覧 -->
+  <div id="thumbs" style="display: flex; overflow-x: auto; gap: 10px; margin-top: 20px; max-width: 900px; margin: 20px auto;">
+    <div class="thumb" data-video="B2jmUwaxWOI" style="min-width: 30%; flex-shrink: 0;">
+      <img src="https://img.youtube.com/vi/B2jmUwaxWOI/mqdefault.jpg" style="width: 100%; cursor: pointer;">
+    </div>
+    <div class="thumb" data-video="-BIjkXtcTTY" style="min-width: 30%; flex-shrink: 0;">
+      <img src="https://img.youtube.com/vi/-BIjkXtcTTY/mqdefault.jpg" style="width: 100%; cursor: pointer;">
+    </div>
+    <div class="thumb" data-video="PVwoFVt42rQ" style="min-width: 30%; flex-shrink: 0;">
+      <img src="https://img.youtube.com/vi/PVwoFVt42rQ/mqdefault.jpg" style="width: 100%; cursor: pointer;">
+    </div>
+    <div class="thumb" data-video="elQpG0xlhjY" style="min-width: 30%; flex-shrink: 0;">
+      <img src="https://img.youtube.com/vi/elQpG0xlhjY/mqdefault.jpg" style="width: 100%; cursor: pointer;">
+    </div>
+    <div class="thumb" data-video="54kY51YkZWM" style="min-width: 30%; flex-shrink: 0;">
+      <img src="https://img.youtube.com/vi/54kY51YkZWM/mqdefault.jpg" style="width: 100%; cursor: pointer;">
     </div>
   </div>
-  
 </article>
+
 
 
 
