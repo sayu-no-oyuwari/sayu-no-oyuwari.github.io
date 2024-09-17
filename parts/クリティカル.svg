@@ -5,12 +5,99 @@
 <g id="webp">
 	<image x="0" y="0"  href=""/>
 </g>
-<use id="画像" href="#webp" xlink:href="#webp" x="720" y="720">
-</use>
+
+<!--文字設定-->
+
+<text id="System_txt" class="Txt3"  x="0" y="0">
+	クリティカル
+</text>
+
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&amp;family=Kaisei+Decol:wght@400;500;700&amp;family=Rampart+One&amp;display=swap');
+
+
+.Txt1 {
+	font-size: 180px;
+	fill: black;
+	font-family: "Rampart One", serif;
+	text-anchor: middle; /* テキストの開始位置 */
+}
+
+.Txt2 {
+	font-family: 'Dela Gothic One', serif;
+	font-size: 180px;
+	fill: #DCD2A9;
+	stroke: #4E4851; /* ふちどりの色 */
+	text-anchor: middle; /* テキストの開始位置 */
+}
+
+
+.Txt3 {
+	font-family: 'Kaisei Decol', serif;
+	font-size: 180px;
+	font-weight: 400;
+	fill: #DCD2A9;
+	text-anchor: middle; /* テキストの開始位置 */
+}
+
+</style>
+
+<!-- キラキラのためのフィルタ -->
+
+    <!-- グロー効果 -->
+    <filter id="glow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blurred" />
+      <feMerge>
+        <feMergeNode in="blurred" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  
+    <path id="diamond1" 
+             d="M 0,-60 
+             C 10,-20 10,-10 30,0 
+             C 10,10 10,20 0,60
+             C -10,20 -10,10 -30,0
+             C -10,-10 -10,-20 0,-60"  fill="#DCD2A9" filter="url(#glow)">
+      <animateTransform attributeName="transform" type="scale" values="1;1.2;1" dur="1s" repeatCount="indefinite" />
+    </path>
+
+    <path id="diamond2" 
+             d="M 0,-60 
+             C 10,-20 10,-10 30,0 
+             C 10,10 10,20 0,60
+             C -10,20 -10,10 -30,0
+             C -10,-10 -10,-20 0,-60"  fill="#DCD2A9" filter="url(#glow)">
+      <animateTransform attributeName="transform" type="scale" values="0.8;0.6;0.8" dur="1s" repeatCount="indefinite" />
+    </path>
 
 </defs>
 
-<use href="#画像" xlink:href="#画像" x="0" y="0">
+<use href="#webp" xlink:href="#webp" x="720" y="720">
+</use>
+
+
+<use href="#webp" xlink:href="#webp" x="720" y="720" filter="url(#glow)">
+</use>
+
+<path id="風" d="M100,700 Q400,600 700,700 T1300,700" stroke="#DCD2A9" stroke-width="8" fill="none" filter="url(#glow)">
+  <animate attributeName="d" dur="3s" repeatCount="indefinite"
+    values="
+      M100,700 Q400,630 700,680 T1300,700;
+      M100,710 Q400,590 700,690 T1300,710;
+      M100,700 Q400,630 700,680 T1300,700" />
+</path>
+
+  <!-- useで複数の四角形を配置 -->
+  <use href="#diamond1" x="150" y="600" />
+  <use href="#diamond2" x="200" y="550" />
+  <use href="#diamond1" x="1200" y="750"/>
+  <use href="#diamond2" x="1250" y="800" />
+
+<use href="#System_txt" xlink:href="#System_txt" x="720" y="720" opacity="1" filter="url(#glow)">
+  <animate id="Anime1" attributeName="opacity" from="0" to="1" dur="1s" begin="0s;Anime2.end + 0s" fill="freeze" />
+  <animate id="Anime2" attributeName="opacity" from="1" to="0" dur="1s" begin="1s;Anime2.end + 1s" fill="freeze" />
+  <animateTransform attributeName="transform" type="translate" from="-500 0" to="0 0" dur="1s" begin="0s;Anime2.end + 0s"  fill="freeze" />
 </use>
 
 </svg>
