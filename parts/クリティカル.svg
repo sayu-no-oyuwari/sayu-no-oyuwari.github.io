@@ -59,7 +59,7 @@
              C 10,10 10,20 0,60
              C -10,20 -10,10 -30,0
              C -10,-10 -10,-20 0,-60"  fill="#DCD2A9" filter="url(#glow)">
-      <animateTransform attributeName="transform" type="scale" values="1;1.2;1" dur="1s" repeatCount="indefinite" />
+      <animateTransform attributeName="transform" type="scale" values="0.2;1.2;0.2" dur="1s" repeatCount="indefinite" />
     </path>
 
     <path id="diamond2" 
@@ -68,10 +68,41 @@
              C 10,10 10,20 0,60
              C -10,20 -10,10 -30,0
              C -10,-10 -10,-20 0,-60"  fill="#DCD2A9" filter="url(#glow)">
-      <animateTransform attributeName="transform" type="scale" values="0.8;0.6;0.8" dur="1s" repeatCount="indefinite" />
+      <animateTransform attributeName="transform" type="scale" values="0.8;0.1;0.8" dur="1s" repeatCount="indefinite" />
     </path>
-
+    
+    <!-- ひし形のシンボル定義 -->
+    <symbol id="haikei" viewBox="-50 -50 100 100">
+      <!-- ひし形のパス -->
+      <polygon points="0,-40 40,0 0,40 -40,0" fill="#2C242A" stroke="#4B3B2D" stroke-width="2" filter="url(#sparkle)">
+        <!-- キラキラエフェクトのアニメーション -->
+      <animateTransform attributeName="transform" type="scale" values="0.9;1;0.9" dur="1.5s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="1;0.8;1" dur="1.5s" repeatCount="indefinite" />
+      </polygon>
+    </symbol>
+    
+<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+  <stop offset="0%" stop-color="#DCD2A9" stop-opacity="0">
+    <!-- フェードインのアニメーション -->
+    <animate attributeName="stop-opacity" values="0;1" dur="1s" begin="0s;Anime2.end + 0s" fill="freeze" 
+      keySplines="0.42 0 0.58 1" calcMode="spline"/>
+    <!-- フェードアウトのアニメーション -->
+    <animate attributeName="stop-opacity" values="1;0" dur="1s" begin="Anime1.end + 1s" fill="freeze"
+      keySplines="0.42 0 0.58 1" calcMode="spline"/>
+  </stop>
+  
+  <stop offset="100%" stop-color="#DCD2A9" stop-opacity="1">
+    <!-- フェードアウトのアニメーション -->
+    <animate attributeName="stop-opacity" values="1;0" dur="1s" begin="0s;Anime2.end + 0s" fill="freeze"
+      keySplines="0.42 0 0.58 1" calcMode="spline"/>
+    <!-- フェードインのアニメーション -->
+    <animate attributeName="stop-opacity" values="0;1" dur="1s" begin="Anime1.end + 1s" fill="freeze"
+      keySplines="0.42 0 0.58 1" calcMode="spline"/>
+  </stop>
+</linearGradient>
 </defs>
+
+<use href="#haikei" x="0" y="0" />
 
 <use href="#webp" xlink:href="#webp" x="720" y="720">
 </use>
@@ -80,7 +111,7 @@
 <use href="#webp" xlink:href="#webp" x="720" y="720" filter="url(#glow)">
 </use>
 
-<path id="風" d="M100,700 Q400,600 700,700 T1300,700" stroke="#DCD2A9" stroke-width="8" fill="none" filter="url(#glow)">
+<path id="風" d="M100,700 Q400,600 700,700 T1300,700"  stroke="url(#grad1)" stroke-width="8" fill="none" filter="url(#glow)" stroke-linecap="round">
   <animate attributeName="d" dur="3s" repeatCount="indefinite"
     values="
       M100,700 Q400,630 700,680 T1300,700;
