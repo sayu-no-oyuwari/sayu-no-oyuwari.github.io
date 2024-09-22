@@ -5,13 +5,258 @@
 <g id="webp">
 	<image x="0" y="0"  href=""/>
 </g>
-<use id="画像" href="#webp" xlink:href="#webp" x="720" y="720">
-</use>
+
+<g  id="画像">
+
+  <use href="#webp" xlink:href="#webp" x="0" y="0">
+    <animateTransform 
+      attributeName="transform"
+      type="translate"
+      values="0,0; 10,5; -10,-5; 10,5; -10,-5; 5,1; -5,-2; 3,0; -3,0; 0,0"
+      dur="0.7s"
+      repeatCount="indefinite"
+    />
+  </use>
+
+</g>
+
+
+<!--文字設定-->
+
+<text id="System_txt" x="0" y="0" fill="#2F2725" stroke="#F8F5E3">
+	ファンブル
+</text>
+
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&amp;family=DotGothic16&amp;family=Palette+Mosaic&amp;family=Rampart+One&amp;family=Rock+3D&amp;family=Shizuru&amp;display=swap');
+
+
+
+.Txt1 {
+	font-family: 'family', serif;
+	font-size: 180px;
+	font-weight: 400;
+	font-family: "Palette Mosaic", serif;
+	text-anchor: middle; /* テキストの開始位置 */
+}
+
+.Txt2 {
+	font-family: 'Shizuru', serif;
+	font-size: 180px;
+	font-weight: 400;
+	text-anchor: middle; /* テキストの開始位置 */
+}
+
+
+.Txt3 {
+	font-family: 'Rampart One', serif;
+	font-size: 180px;
+	font-weight: 400;
+	text-anchor: middle; /* テキストの開始位置 */
+}
+
+.Txt4 {
+	font-family: 'Rock 3D', serif;
+	font-size: 180px;
+	font-weight: 400;
+	text-anchor: middle; /* テキストの開始位置 */
+}
+
+.Txt5 {
+	font-family: 'DotGothic16', serif;
+	font-size: 180px;
+	font-weight: 400;
+	text-anchor: middle; /* テキストの開始位置 */
+}
+
+</style>
+
+    <!-- グロー効果 -->
+    <filter id="glow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blurred" />
+      <feMerge>
+        <feMergeNode in="blurred" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow2">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="30" result="blurred" />
+    </filter>
+
+<mask id="fuwa">
+<rect x="0" y="0" width="100%" height="100%" fill="#FFFFFF"/>
+<circle cx="720" cy="720" r="700" fill="#000000" filter="url(#glow2)">
+    <animate
+      attributeName="r"
+      values="700;500;700"
+      dur="0.8s"
+      repeatCount="indefinite" />
+</circle>
+</mask>
+
+
+<g id="line" transform="scale(2.5 3.3)" fill="#2F2725">
+	<polygon class="st0" points="599.891,214.574 599.891,213.89 507.869,217.535 	"></polygon>
+	<polygon class="st0" points="599.891,193.653 599.891,192.943 506.071,203.214 	"></polygon>
+	<polygon class="st0" points="599.891,185.685 599.891,182.034 498.813,197.728 	"></polygon>
+	<polygon class="st0" points="599.891,173.53 599.891,170.914 490.927,191.398 	"></polygon>
+	<polygon class="st0" points="599.891,150.285 599.891,146.672 497.025,174.73 	"></polygon>
+	<polygon class="st0" points="599.891,139.236 599.891,136.016 499.586,166.853 	"></polygon>
+	<polygon class="st0" points="599.891,126.179 599.891,122.881 479.067,165.008 	"></polygon>
+	<polygon class="st0" points="599.891,101.488 599.891,98.644 471.448,153.57 	"></polygon>
+	<polygon class="st0" points="599.891,88.597 599.891,84.74 482.391,140.87 	"></polygon>
+	<polygon class="st0" points="599.891,58.888 599.891,57.394 471.967,129.307 	"></polygon>
+	<polygon class="st0" points="453.252,133.196 599.891,48.312 600,44.939 	"></polygon>
+	<polygon class="st0" points="599.891,14.838 599.891,9.861 446.881,120.842 	"></polygon>
+	<polygon class="st0" points="587.427,0 585.338,0 439.565,115.325 	"></polygon>
+	<polygon class="st0" points="545.241,0 538.774,0 430.663,103.477 	"></polygon>
+	<polygon class="st0" points="502.8,0 499.012,0 415.805,95.272 	"></polygon>
+	<polygon class="st0" points="465.418,0 462.105,0 393.968,95.854 	"></polygon>
+	<polygon class="st0" points="447.774,0 444.718,0 385.938,92.742 	"></polygon>
+	<polygon class="st0" points="433.086,0 432.141,0 384.148,82.195 	"></polygon>
+	<polygon class="st0" points="404.477,0 402.913,0 364.069,85.934 	"></polygon>
+	<polygon class="st0" points="392.015,0 389.459,0 360.25,75.546 	"></polygon>
+	<polygon class="st0" points="374.736,0 353.205,69.397 379.206,0 	"></polygon>
+	<polygon class="st0" points="352.157,0 350.493,0 336.103,66.656 	"></polygon>
+	<polygon class="st0" points="340.819,0 337.842,0 325.482,79.102 	"></polygon>
+	<polygon class="st0" points="321.814,0 316.422,69.34 325.717,0 	"></polygon>
+	<polygon class="st0" points="297.818,0 298.746,73.353 298.513,0 	"></polygon>
+	<polygon class="st0" points="282.392,0 289.124,69.061 286.266,0 	"></polygon>
+	<polygon class="st0" points="269.743,0 269.001,0 280.054,78.608 	"></polygon>
+	<polygon class="st0" points="256.469,0 253.115,0 268.069,66.14 	"></polygon>
+	<polygon class="st0" points="229.249,0 226.167,0 252.614,77.565 	"></polygon>
+	<polygon class="st0" points="215.629,0 210.162,0 240.268,70.713 	"></polygon>
+	<polygon class="st0" points="182.365,0 180.491,0 223.451,79.775 	"></polygon>
+	<polygon class="st0" points="166.526,0 162.478,0 219.221,90.887 	"></polygon>
+	<polygon class="st0" points="151.637,0 148.621,0 209.614,89.33 	"></polygon>
+	<polygon class="st0" points="122.071,0 117.036,0 189.58,87.325 	"></polygon>
+	<polygon class="st0" points="100.379,0 98.52,0 187.6,98.923 	"></polygon>
+	<polygon class="st0" points="82.691,0 76.463,0 173.159,95.528 	"></polygon>
+	<polygon class="st0" points="36.026,0 33.489,0 162.067,108.015 	"></polygon>
+	<polygon class="st0" points="9.099,0 7.009,0 150.586,109.868 	"></polygon>
+	<polygon class="st0" points="0,8.525 0,15.238 153.156,120.726 	"></polygon>
+	<polygon class="st0" points="0,43.419 0,46.556 146.767,133.076 	"></polygon>
+	<polygon class="st0" points="0,56.344 0,62.758 132.225,132.513 	"></polygon>
+	<polygon class="st0" points="0,74.777 0,77.581 126.322,138.861 	"></polygon>
+	<polygon class="st0" points="0,100.711 0,105.908 111.559,148.591 	"></polygon>
+	<polygon class="st0" points="0,112.521 0,114.479 118.803,157.666 	"></polygon>
+	<polygon class="st0" points="0,136.875 0,138.755 105.845,168.583 	"></polygon>
+	<polygon class="st0" points="0,148.702 0,151.242 108.162,177.031 	"></polygon>
+	<polygon class="st0" points="0,158.583 0,159.825 100.15,181.174 	"></polygon>
+	<polygon class="st0" points="0,170.84 0,172.283 103.253,189.959 	"></polygon>
+	<polygon class="st0" points="0,193.486 0,195.029 99.643,204.471 	"></polygon>
+	<polygon class="st0" points="0,212.833 0,213.584 104.05,217.299 	"></polygon>
+	<polygon class="st0" points="0,220.112 0,223.918 97.8,222.989 	"></polygon>
+	<polygon class="st0" points="0,231.074 0,232.125 91.873,229.578 	"></polygon>
+	<polygon class="st0" points="0,248.723 0,250.642 98.988,241.536 	"></polygon>
+	<polygon class="st0" points="0,266.838 0,270.158 95.566,254.634 	"></polygon>
+	<polygon class="st0" points="0,277.735 0,281.823 97.688,261.929 	"></polygon>
+	<polygon class="st0" points="0,295.986 0,299.909 107.633,271.762 	"></polygon>
+	<polygon class="st0" points="0,307.098 0,308.474 98.957,280.472 	"></polygon>
+	<polygon class="st0" points="0,318.104 0,323.338 113.908,284.352 	"></polygon>
+	<polygon class="st0" points="0,332.803 0,333.575 117.75,290.717 	"></polygon>
+	<polygon class="st0" points="0,345.19 0,346.303 116.526,298.837 	"></polygon>
+	<polygon class="st0" points="0,372.272 0,376.753 136.556,306.431 	"></polygon>
+	<polygon class="st0" points="0,386.018 0,389.033 126.335,319.064 	"></polygon>
+	<polygon class="st0" points="0,417.449 0,422.447 141.941,326.66 	"></polygon>
+	<polygon class="st0" points="0,437.446 0,438.996 153.204,329.312 	"></polygon>
+	<polygon class="st0" points="5.131,450 7.296,450 158.499,333.35 	"></polygon>
+	<polygon class="st0" points="49.909,450 51.584,450 163.089,348.568 	"></polygon>
+	<polygon class="st0" points="72.421,450 81.303,450 182.493,342.858 	"></polygon>
+	<polygon class="st0" points="110.153,450 119.092,450 190.562,357.854 	"></polygon>
+	<polygon class="st0" points="129.869,450 133.9,450 198.201,361.227 	"></polygon>
+	<polygon class="st0" points="176.018,450 177.347,450 225.383,361.106 	"></polygon>
+	<polygon class="st0" points="189.91,450 196.31,450 232.129,367.863 	"></polygon>
+	<polygon class="st0" points="206.574,450 208.076,450 242.069,365.599 	"></polygon>
+	<polygon class="st0" points="236.52,450 241.514,450 258.516,378.026 	"></polygon>
+	<polygon class="st0" points="250.313,450 253.056,450 268.785,370.282 	"></polygon>
+	<polygon class="st0" points="267.871,450 276.381,380.146 263.66,450 	"></polygon>
+	<polygon class="st0" points="280.227,450 286.398,371.799 278.135,450 	"></polygon>
+	<polygon class="st0" points="301.596,450 304.787,450 302.263,385.641 	"></polygon>
+	<polygon class="st0" points="312.194,450 315.57,450 309.606,380.982 	"></polygon>
+	<polygon class="st0" points="325.513,450 326.863,450 318.611,385.039 	"></polygon>
+	<polygon class="st0" points="335.221,450 338.762,450 326.193,384.439 	"></polygon>
+	<polygon class="st0" points="365.447,450 368.767,450 344.115,372.986 	"></polygon>
+	<polygon class="st0" points="379.032,450 380.031,450 354.869,380.277 	"></polygon>
+	<polygon class="st0" points="394.166,450 397.187,450 361.41,369.471 	"></polygon>
+	<polygon class="st0" points="408.151,450 411.683,450 374.386,375.633 	"></polygon>
+	<polygon class="st0" points="420.475,450 426.481,450 374.635,361.066 	"></polygon>
+	<polygon class="st0" points="456.344,450 460.91,450 397.864,362.795 	"></polygon>
+	<polygon class="st0" points="476.358,450 481.18,450 403.462,355.261 	"></polygon>
+	<polygon class="st0" points="513.296,450 520.621,450 421.947,351.52 	"></polygon>
+	<polygon class="st0" points="534.794,450 539.692,450 428.446,347.846 	"></polygon>
+	<polygon class="st0" points="553.086,450 554.835,450 434.472,344.161 	"></polygon>
+	<polygon class="st0" points="599.891,445.035 599.891,440.481 445.222,330.459 	"></polygon>
+	<polygon class="st0" points="599.891,429.293 599.891,426.194 445.678,323.501 	"></polygon>
+	<polygon class="st0" points="599.891,413.944 599.891,409.437 464.768,327.575 	"></polygon>
+	<polygon class="st0" points="599.891,380.72 599.891,379.717 476.229,316.224 	"></polygon>
+	<polygon class="st0" points="599.891,366.958 599.891,363.818 466.375,302.891 	"></polygon>
+	<polygon class="st0" points="599.891,356.045 599.891,350.905 485.935,304.644 	"></polygon>
+	<polygon class="st0" points="599.891,328.495 599.891,326.967 489.304,289.853 	"></polygon>
+	<polygon class="st0" points="599.891,304.966 599.891,304.035 484.904,274.023 	"></polygon>
+	<polygon class="st0" points="599.891,295.812 599.891,291.965 493.254,269.389 	"></polygon>
+	<polygon class="st0" points="599.891,286.082 599.891,283.496 495.329,263.943 	"></polygon>
+	<polygon class="st0" points="599.891,265.569 599.891,263.782 499.037,251.333 	"></polygon>
+	<polygon class="st0" points="599.891,257.639 599.891,255.289 500.161,246.001 	"></polygon>
+	<polygon class="st0" points="599.891,247.303 599.891,245.395 501.205,239.324 	"></polygon>
+	<polygon class="st0" points="599.891,236.475 599.891,233.019 507.913,231.757 	"></polygon>
+	<polygon class="st0" points="599.891,225.132 599.891,222.04 514.102,223.99 	"></polygon>
+</g>
 
 </defs>
 
-<use href="#画像" xlink:href="#画像" x="0" y="0">
+
+<use href="#haikei" x="0" y="0" />
+
+<use href="#line" xlink:href="#line" mask="url(#fuwa)">
+
+
 </use>
+
+<use href="#画像" xlink:href="#画像" x="720" y="720">
+
+</use>
+
+
+<use href="#画像" xlink:href="#画像" x="720" y="720" filter="url(#glow)">
+
+</use>
+
+
+  <!-- Text 1 -->
+  <use class="Txt1" href="#System_txt" x="720" y="720" opacity="0" filter="url(#glow)">
+    <animate id="Anim1" attributeName="opacity" from="0" to="1" dur="0.1s" begin="0s;Anim5out.end+0s" fill="freeze" />
+    <animate id="Anim1out" attributeName="opacity" from="1" to="0" dur="0.1s" begin="Anim1.begin+0.5s" fill="freeze" />
+  </use>
+
+  <!-- Text 2 -->
+  <use class="Txt2" href="#System_txt" x="720" y="720" opacity="0" filter="url(#glow)">
+    <animate id="Anim2" attributeName="opacity" from="0" to="1" dur="0.1s" begin="Anim1out.end+0s" fill="freeze" />
+    <animate id="Anim2out" attributeName="opacity" from="1" to="0" dur="0.1s" begin="Anim2.begin+0.5s" fill="freeze" />
+  </use>
+
+  <!-- Text 3 -->
+  <use class="Txt3" href="#System_txt" x="720" y="720" opacity="0" filter="url(#glow)">
+    <animate id="Anim3" attributeName="opacity" from="0" to="1" dur="0.1s" begin="Anim2out.end+0s" fill="freeze" />
+    <animate id="Anim3out" attributeName="opacity" from="1" to="0" dur="0.1s" begin="Anim3.begin+0.5s" fill="freeze" />
+  </use>
+
+  <!-- Text 4 -->
+  <use class="Txt4" href="#System_txt" x="720" y="720" opacity="0" filter="url(#glow)">
+    <animate id="Anim4" attributeName="opacity" from="0" to="1" dur="0.1s" begin="Anim3out.end+0s" fill="freeze" />
+    <animate id="Anim4out" attributeName="opacity" from="1" to="0" dur="0.1s" begin="Anim4.begin+0.5s" fill="freeze" />
+  </use>
+
+  <!-- Text 5 -->
+  <use class="Txt5" href="#System_txt" x="720" y="720" opacity="0" filter="url(#glow)">
+    <animate id="Anim5" attributeName="opacity" from="0" to="1" dur="0.1s" begin="Anim4out.end+0s" fill="freeze" />
+    <animate id="Anim5out" attributeName="opacity" from="1" to="0" dur="0.1s" begin="Anim5.begin+0.5s" fill="freeze" />
+  </use>
+
+
+
+</svg>
 
 </svg>
 
