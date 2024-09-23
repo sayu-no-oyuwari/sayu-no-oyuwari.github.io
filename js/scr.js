@@ -36,6 +36,21 @@
 
 
 
+let currentAction = '';  // 現在のアクションを記憶する変数
+
+// ボタンが押されたときに、アクションを設定してファイル選択をトリガーする
+function setActionAndTriggerFileUpload(action) {
+    currentAction = action;  // 押されたボタンに対応するアクションを保存
+    document.getElementById('imageUpload').click();  // 非表示のファイル入力をクリックしてファイル選択ダイアログを表示
+}
+
+// ファイルが選択されたら自動的に画像処理を開始する
+document.getElementById('imageUpload').addEventListener('change', function () {
+    if (this.files.length > 0) {
+        processImage(currentAction);  // 保存しておいたアクションを使って処理を実行
+    }
+});
+
 
 function processImage(action) {
     const fileInput = document.getElementById('imageUpload');

@@ -509,7 +509,7 @@
         <h6>　apng/webpはアニメーションを活かす為、縮小処理を行うことができません。</h6>
         <h6>ご自身で1440×1440に変換してから使用してください。</h6>
         <h5></h5>
-    	<a><input type="file" id="imageUpload" accept=".jpg, .jpeg, .png, .webp"></a>
+    	<a><input type="file" id="imageUpload" accept=".jpg, .jpeg, .png, .webp" style="display:none;"></a>
         </li>
         
         <li class="flex-item">
@@ -529,39 +529,38 @@
         </li>
 
         
-        <li class="flex-item">
-        <h5>【カットイン作成】(3秒)</h5>
-        <img src="pic/カットイン(愁).svg" alt="カットイン(愁)" oncontextmenu="return false;">
-    	    <div class="btn-container">
-        <button class="btn" onclick="processImage('カットイン')">カットイン</button>
-             </div>
-        </li>
-        
-        <li class="flex-item">
-        <h5>【カットイン(ぴくるーサイズ)作成】(3秒)</h5>
-        <h6>【注意】加工NGや名前隠しNG等の規約の元作成した画像で使用禁止</h6>
-        <img src="pic/カットイン (きざえもん).svg" alt="きざえもん" oncontextmenu="return false;">
-    	    <div class="btn-container">
-        <button class="btn" onclick="processImage('カットイン (ぴくるー用)')">カットイン (ぴくるーサイズ)</button>
-             </div>
-        </li>
-        
-        <li class="flex-item">
-        <h5>【クリティカル作成】(3秒)</h5>
-        <img src="pic/播磨(若).svg" alt="播磨(若)" oncontextmenu="return false;">
-    	    <div class="btn-container">
-        <button class="btn" onclick="processImage('クリティカル')">クリティカル</button>
-             </div>
-        </li>
+<li class="flex-item">
+    <h5>【カットイン作成】(3秒)</h5>
+    <img src="pic/カットイン(愁).svg" alt="カットイン(愁)" oncontextmenu="return false;">
+    <div class="btn-container">
+        <button class="btn" onclick="setActionAndTriggerFileUpload('カットイン')">カットイン</button>
+    </div>
+</li>
 
-        
-        <li class="flex-item">
-        <h5>【ファンブル作成】</h5>
-        <img src="pic/仲原敦.svg" alt="仲原敦" oncontextmenu="return false;">
-    	    <div class="btn-container">
-        <button class="btn" onclick="processImage('ファンブル')">ファンブル</button>
-             </div>
-        </li>
+<li class="flex-item">
+    <h5>【カットイン(ぴくるーサイズ)作成】(3秒)</h5>
+    <h6>【注意】加工NGや名前隠しNG等の規約の元作成した画像で使用禁止</h6>
+    <img src="pic/カットイン (きざえもん).svg" alt="きざえもん" oncontextmenu="return false;">
+    <div class="btn-container">
+        <button class="btn" onclick="setActionAndTriggerFileUpload('カットイン (ぴくるー用)')">カットイン (ぴくるーサイズ)</button>
+    </div>
+</li>
+
+<li class="flex-item">
+    <h5>【クリティカル作成】(3秒)</h5>
+    <img src="pic/播磨(若).svg" alt="播磨(若)" oncontextmenu="return false;">
+    <div class="btn-container">
+        <button class="btn" onclick="setActionAndTriggerFileUpload('クリティカル')">クリティカル</button>
+    </div>
+</li>
+
+<li class="flex-item">
+    <h5>【ファンブル作成】</h5>
+    <img src="pic/仲原敦.svg" alt="仲原敦" oncontextmenu="return false;">
+    <div class="btn-container">
+        <button class="btn" onclick="setActionAndTriggerFileUpload('ファンブル')">ファンブル</button>
+    </div>
+</li>
 
 
         <li class="flex-item">
