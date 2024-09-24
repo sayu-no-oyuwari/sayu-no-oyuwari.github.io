@@ -52,7 +52,6 @@
 
 
 .Txt1 {
-	font-family: 'family', serif;
 	font-size: 180px;
 	font-weight: 400;
 	font-family: "Palette Mosaic", serif;
