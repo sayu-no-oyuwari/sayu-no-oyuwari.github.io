@@ -8,31 +8,20 @@
 
 <!--文字設定-->
 
-<text id="System_txt" class="Txt3"  x="0" y="0">
+<text id="System_txt" class="Txt1"  x="0" y="0">
 	クリティカル
 </text>
 
 <style type="text/css">
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&amp;family=Kaisei+Decol:wght@400;500;700&amp;family=Rampart+One&amp;display=swap');
-
+    @font-face {
+      font-family: 'Palette Mosaic';
+      src: url(data:font/woff2;base64,
+      
+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
+      format('woff2');
+    }
 
 .Txt1 {
-	font-size: 180px;
-	fill: black;
-	font-family: "Rampart One", serif;
-	text-anchor: middle; /* テキストの開始位置 */
-}
-
-.Txt2 {
-	font-family: 'Dela Gothic One', serif;
-	font-size: 180px;
-	fill: #DCD2A9;
-	stroke: #4E4851; /* ふちどりの色 */
-	text-anchor: middle; /* テキストの開始位置 */
-}
-
-
-.Txt3 {
 	font-family: 'Kaisei Decol', serif;
 	font-size: 180px;
 	font-weight: 400;
