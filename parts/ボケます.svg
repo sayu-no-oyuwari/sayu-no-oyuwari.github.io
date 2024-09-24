@@ -1,0 +1,132 @@
+<svg width="1440" height="1440" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" overflow="hidden">
+
+<defs>
+
+<g id="画像">
+	<image x="0" y="0"  href=""/>
+</g>
+
+<use id="webp" href="#画像" xlink:href="#画像" x="0" y="0">
+
+     <animateTransform 
+      attributeName="transform"
+      type="translate"
+      dur="1.3s"
+      values="0,0; 0,-30; 0,10; 0,-50; 0,50; 0,20; 0,-20; 0,10; 0,0; 0,0"
+      begin="0s;Anime2.end + 0.5s" fill="freeze" additive="sum"
+    />
+    <animateTransform attributeName="transform" type="scale" begin="0s;Anime2.end + 0.5s" dur="0.4s" fill="freeze" values="0.2,0.2;1.4,1.4;1.5,1.5" keyTimes="0;0.5;1"  additive="sum"/>
+
+
+</use>
+
+<!--文字設定-->
+
+<text id="System_txt1" class="Txt1"  x="0" y="0" fill="#000000" stroke="#FFFFFF">
+	ボケ
+</text>
+<text id="System_txt2" class="Txt1"  x="0" y="0" fill="#000000" stroke="#FFFFFF">
+	ます！
+</text>
+
+<style type="text/css">
+    @font-face {
+      font-family: 'Cherry Bomb One';
+      src: url(data:font/woff2;base64,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) format('woff2');
+    }
+
+.Txt1 {
+	font-family: 'Cherry Bomb One', serif;
+	font-size: 250px;
+	font-weight: 400;
+	text-anchor: middle; /* テキストの開始位置 */
+}
+
+</style>
+
+    <!-- グロー効果 -->
+    <filter id="glow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blurred" />
+      <feMerge>
+        <feMergeNode in="blurred" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+<path id="三角" d="M 0 0 L 200 1440 L -200 1440 z" />
+
+<g  id="虹色">
+
+<use href="#三角" fill="#E50011" stroke="none" />
+<use href="#三角" fill="#EE7700" stroke="none" transform="rotate(15)"/>
+<use href="#三角" fill="#FFF000" stroke="none" transform="rotate(30)"/>
+<use href="#三角" fill="#00A73B" stroke="none" transform="rotate(45)"/>
+<use href="#三角" fill="#0064B3" stroke="none" transform="rotate(60)"/>
+<use href="#三角" fill="#5F1885" stroke="none" transform="rotate(75)"/>
+<use href="#三角" fill="#E50011" stroke="none" transform="rotate(90)"/>
+<use href="#三角" fill="#EE7700" stroke="none" transform="rotate(105)"/>
+<use href="#三角" fill="#FFF000" stroke="none" transform="rotate(120)"/>
+<use href="#三角" fill="#00A73B" stroke="none" transform="rotate(135)"/>
+<use href="#三角" fill="#0064B3" stroke="none" transform="rotate(150)"/>
+<use href="#三角" fill="#5F1885" stroke="none" transform="rotate(165)"/>
+<use href="#三角" fill="#E50011" stroke="none" transform="rotate(180)"/>
+<use href="#三角" fill="#EE7700" stroke="none" transform="rotate(195)"/>
+<use href="#三角" fill="#FFF000" stroke="none" transform="rotate(210)"/>
+<use href="#三角" fill="#00A73B" stroke="none" transform="rotate(225)"/>
+<use href="#三角" fill="#0064B3" stroke="none" transform="rotate(240)"/>
+<use href="#三角" fill="#5F1885" stroke="none" transform="rotate(255)"/>
+<use href="#三角" fill="#E50011" stroke="none" transform="rotate(270)"/>
+<use href="#三角" fill="#EE7700" stroke="none" transform="rotate(285)"/>
+<use href="#三角" fill="#FFF000" stroke="none" transform="rotate(300)"/>
+<use href="#三角" fill="#00A73B" stroke="none" transform="rotate(315)"/>
+<use href="#三角" fill="#0064B3" stroke="none" transform="rotate(330)"/>
+<use href="#三角" fill="#5F1885" stroke="none" transform="rotate(345)"/>
+
+</g>
+
+
+<use id="haikei" href="#虹色" fill="#E50011">
+    <animateTransform
+      attributeName="transform"
+      attributeType="XML"
+      type="rotate"
+      from="0"
+      to="360"
+      dur="8s"
+      repeatCount="indefinite" />
+</use>
+ 
+<use id="txtbig" href="#System_txt1" xlink:href="#System_txt1" x="0" y="0">
+<animateTransform attributeName="transform" type="scale" begin="0s;Anime2.end + 0.5s" dur="0.4s" fill="freeze" values="0.2,0.2;1.4,1.4;1.5,1.5" keyTimes="0;0.5;1"/>
+</use>
+ 
+</defs>
+
+<rect x="0" y="0" width="100%" height="100%" fill="none" stroke="#F46860" stroke-width="5" stroke-dasharray="2,15" stroke-linecap="round" />
+
+<use href="#虹色" fill="#E50011"  x="720" y="720" />
+
+<use href="#haikei" x="720" y="720"/>
+
+<use href="#webp" xlink:href="#webp" x="720" y="720">
+</use>
+
+
+<use href="#webp" xlink:href="#webp" x="720" y="720" filter="url(#glow)">
+</use>
+
+<g>
+
+<use href="#txtbig" xlink:href="#txtbig" x="470" y="1220" opacity="0" filter="url(#glow)">
+  <animate id="Anime1" attributeName="opacity" from="0" to="1" dur="0.1s" begin="0s;Anime2.end + 0.5s" fill="freeze" />
+  <animate id="Anime2" attributeName="opacity" from="1" to="0" dur="1s" begin="Anime1.end + 3s" fill="freeze" />
+</use>
+
+
+</g>
+<use href="#System_txt2" xlink:href="#System_txt" x="1020" y="1220" opacity="0" filter="url(#glow)">
+  <animate id="Anime3" attributeName="opacity" from="0" to="1" dur="0.1s" begin="Anime1.end + 0.5s" fill="freeze" />
+  <animate id="Anime4" attributeName="opacity" from="1" to="0" dur="1s" begin="Anime1.end + 3s" fill="freeze" />
+</use>
+
+</svg>
