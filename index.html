@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -885,38 +886,6 @@
 
 <script src="js/scr.js"></script>
 
-<script>
-// パスワードチェック用の変数
-const correctPassword = "白湯のお湯割り！！";
-
-// 現在のアクションを記憶する変数
-let Sayu_Fan_Action = ''; 
-
-// ボタンが押されたときに、アクションを設定してファイル選択をトリガーする
-function setActionAndTriggerFileUpload(action) {
-    Sayu_Fan_Action = action;  // 押されたボタンに対応するアクションを保存
-    document.getElementById('imageUpload').click();  // 非表示のファイル入力をクリックしてファイル選択ダイアログを表示
-}
-
-// パスワード認証後にユーザー操作を経由してファイル選択ダイアログを表示
-function promptPasswordAndTriggerAction(action) {
-    const userInput = prompt('パスワードを入力してください:');
-    
-    if (userInput === correctPassword) {
-        // パスワードが正しい場合のみ、ユーザー操作を経由してファイル選択をトリガー
-        setActionAndTriggerFileUpload(action);
-    } else {
-        alert('パスワードが正しくありません。');
-    }
-}
-
-// ファイルが選択されたら自動的に画像処理を開始する
-document.getElementById('imageUpload').addEventListener('change', function () {
-    if (this.files.length > 0) {
-        processImage(Sayu_Fan_Action);  // 保存しておいたアクションを使って処理を実行
-    }
-});
-</script>
 
 </body>
 
