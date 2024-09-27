@@ -890,7 +890,7 @@
 const correctPassword = "your_password_here";
 
 // 現在のアクションを記憶する変数
-let currentAction = ''; 
+let Sayu_Fan_Action = ''; 
 
 // パスワードを入力させて、正しければアクションを設定してファイル選択をトリガーする
 function promptPasswordAndTriggerAction(action) {
@@ -905,14 +905,14 @@ function promptPasswordAndTriggerAction(action) {
 
 // ボタンが押されたときに、アクションを設定してファイル選択をトリガーする
 function setActionAndTriggerFileUpload(action) {
-    currentAction = action;  // 押されたボタンに対応するアクションを保存
+    Sayu_Fan_Action = action;  // 押されたボタンに対応するアクションを保存
     document.getElementById('imageUpload').click();  // 非表示のファイル入力をクリックしてファイル選択ダイアログを表示
 }
 
 // ファイルが選択されたら自動的に画像処理を開始する
 document.getElementById('imageUpload').addEventListener('change', function () {
     if (this.files.length > 0) {
-        processImage(currentAction);  // 保存しておいたアクションを使って処理を実行
+        processImage(Sayu_Fan_Action);  // 保存しておいたアクションを使って処理を実行
     }
 });
 </script>
