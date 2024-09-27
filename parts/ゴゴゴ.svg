@@ -1,0 +1,82 @@
+<svg width="1440" height="1440" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" overflow="hidden">
+
+<defs>
+
+<g id="画像">
+	<image x="0" y="0"  href=""/>
+</g>
+
+<!--文字設定-->
+
+<text id="System_txt1" class="Txt1"  x="0" y="0" fill="#000000" stroke="#FFFFFF" stroke-width="8">
+	ゴ
+</text>
+
+
+<style type="text/css">
+    @font-face {
+      font-family: 'Dela Gothic One';
+      src: url(data:font/woff2;base64,
+d09GRgABAAAAAAR0AAsAAAAACBAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABPUy8yAAABCAAAAE4AAABgXa2mj2NtYXAAAAFYAAAALwAAADRhWc/JZ2FzcAAAAYgAAAAIAAAACAAAAAtnbHlmAAABkAAAAG8AAABwlgXHf2hlYWQAAAIAAAAANgAAADYc19gYaGhlYQAAAjgAAAAgAAAAJAieAudobXR4AAACWAAAAAwAAAAMCJgBz2xvY2EAAAJkAAAADwAAABAAAACobWF4cAAAAnQAAAAgAAAAIAB+AJRuYW1lAAAClAAAAckAAAWOcfsmrHBvc3QAAARgAAAAEwAAACD/uAAyeNpjYGY+xTiBgZWBgamLKYKBgcEbQjPGMRgx6gD5ICkYYGRgQXAcQ7z9GBwYFAy2MBf872BgYOlgVFBgYpwPkmOSYboGpBQYGAAEAQs3AAB42mNgYGBkYAZiBgYeBhYGDSDNBqQZGZgYFAy2/P8P5IPp/w/P+4FVAQEAmLAJTQAAAQAB//8ACnjaY2BknMTIxJTHeI+BmYGBUVBRkHESwx1GJoY7/1WAIu4M4sxnmXsZWBm4GUSB8mLs6mam4iDSnFnRVFEQiE0VmWMZhUKFDgMJQcZ3f48z+/x79fcAkzNzo7sLj5OnNJj8V333r6PoawYAkz4azgAAAQAAAAEAAFOdgGdfDzz1AAED6AAAAADchw9UAAAAAN0ohDsARwAXA80DjQAAAAcAAgABAAAAAHjaY2BkYGDp+PeAgYH5BYM7gzTzWQagCApgBgB3eASNA+gBiADIAAAD6ABHeNpjYAADGSguAAACCACpAAABAAAAAwAWAAMAXgAHAAEAAgAeAAYAAABkAAAABAABeNrtk0Fr1EAYht/JbHcRUfQkeJqDh/ayyS700oNQWlrBS2lL25OQxCFJu80smQl0S6/2B3jwqj9AxLO/w9/R39A32U9oD/UgeBBMSPJ838z7zBAYAEZdQ2F5HfNZssITVkuOMMJ7Yc3+mfCAfCG8Qv4gPCR/FB6RP5MVHvf+r8L0Ky1Mv3omTL96IUy/eiVMv5oI069eC9Ov3jKlBo/o/6ZOhBVeRkPhCE8jI6zZHwsPyG+EV8iZ8JB8JTwif+r5eeePvgvTr98J068vhOnX18L06y/C9OsfwvTrn8L065stN180VVEGM02miTksrdm2s9TsulBWudlr3KnNg9lsQ+kab1bLEOZ+I46LKpRtNs7deewX6Vl7aeu4Cy5za8c2O2gzb8OOq8O+LdpZ2tzr3SuObOMrV5vJOEnWH572L+0VW3CYY4EGFQqUCDCYIukfg0N2LL/bfM+QknY5P7BbIWe1x5zDKUfzPrmJth917HvWq70xcAWPDcS8Cya7GS0yjJlyOGfXcwcpT02LS7pqdn6teHe9NZ4Oy9xBn/bkgB2O1/zusyrY7zLNb+Y9PHLEqtt11dcGE+4v4b3+R7b///Wv/NdbokMRXAAAAHjaY2BmAIP/WxmMGLAAACzCAeoA) format('woff2');
+    }
+
+.Txt1 {
+	font-family: 'Dela Gothic One', serif;
+	font-size: 250px;
+	font-weight: 400;
+	text-anchor: middle; /* テキストの開始位置 */
+}
+
+</style>
+
+
+ 
+<use id="ゴ1" href="#System_txt1" xlink:href="#System_txt1" x="0" y="0">
+<animateTransform attributeName="transform" type="scale" begin="0s" dur="0.8s" repeatCount="indefinite" values="1.5,1.5;1.4,1.4;1.3,1.3;1.5,1.5" keyTimes="0;0.3;0.6;1"/>
+</use>
+
+<use id="ゴ2" href="#System_txt1" xlink:href="#System_txt1" x="0" y="0">
+<animateTransform attributeName="transform" type="scale" begin="0s" dur="0.8s" repeatCount="indefinite" values="1,1;1.2,1.2;1,1;1,1" keyTimes="0;0.3;0.6;1"/>
+</use>
+
+<use id="ゴ3" href="#System_txt1" xlink:href="#System_txt1" x="0" y="0">
+<animateTransform attributeName="transform" type="scale" begin="0s" dur="0.8s" repeatCount="indefinite" values="0.9,0.9;1,1;1.2,1.2;0.9,0.9" keyTimes="0;0.3;0.6;1"/>
+</use>
+</defs>
+
+<use href="#虹色" fill="#E50011"  x="720" y="720" />
+
+<use href="#haikei" x="720" y="720"/>
+
+<use href="#webp" xlink:href="#webp" x="720" y="720">
+</use>
+
+
+<use href="#webp" xlink:href="#webp" x="720" y="720" filter="url(#glow)">
+</use>
+
+
+<g>
+
+
+<use href="#ゴ2" xlink:href="#ゴ2" x="1000" y="1300" filter="url(#glow)">
+    />
+</use>
+
+<use href="#ゴ3" xlink:href="#ゴ3" x="1280" y="1100" filter="url(#glow)">
+</use>
+
+<use href="#ゴ1" xlink:href="#ゴ1" x="650" y="1350" filter="url(#glow)">
+
+</use>
+
+    <animateTransform 
+      attributeName="transform"
+      type="translate"
+      values="0,0; 10,5; -10,-5; 10,5; -10,-5; 5,1; -5,-2; 3,0; -3,0; 0,0"
+      dur="0.7s"
+      repeatCount="indefinite"
+    />
+
+</g>
+</svg>
