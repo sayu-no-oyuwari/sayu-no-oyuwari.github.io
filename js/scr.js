@@ -146,33 +146,5 @@ function editAndDownloadSVG(base64data, action, mimeType, imgWidth, imgHeight) {
         });
         
 
-// パスワードチェック用の変数
-const correctPassword = "your_password_here";
 
-// 現在のアクションを記憶する変数
-let currentAction = ''; 
-
-// パスワードを入力させて、正しければアクションを設定してファイル選択をトリガーする
-function promptPasswordAndTriggerAction(action) {
-    const userInput = prompt('パスワードを入力してください:');
-    
-    if (userInput === 白湯のお湯割り！) {
-        setActionAndTriggerFileUpload(action);
-    } else {
-        alert('パスワードが正しくありません。');
-    }
-}
-
-// ボタンが押されたときに、アクションを設定してファイル選択をトリガーする
-function setActionAndTriggerFileUpload(action) {
-    currentAction = action;  // 押されたボタンに対応するアクションを保存
-    document.getElementById('imageUpload').click();  // 非表示のファイル入力をクリックしてファイル選択ダイアログを表示
-}
-
-// ファイルが選択されたら自動的に画像処理を開始する
-document.getElementById('imageUpload').addEventListener('change', function () {
-    if (this.files.length > 0) {
-        processImage(currentAction);  // 保存しておいたアクションを使って処理を実行
-    }
-});
 }
