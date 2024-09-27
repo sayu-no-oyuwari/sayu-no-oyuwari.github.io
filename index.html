@@ -887,7 +887,7 @@
 
 <script>
 // パスワードチェック用の変数
-const correctPassword = "your_password_here";
+const correctPassword = "白湯のお湯割り！！";
 
 // 現在のアクションを記憶する変数
 let Sayu_Fan_Action = ''; 
@@ -896,7 +896,7 @@ let Sayu_Fan_Action = '';
 function promptPasswordAndTriggerAction(action) {
     const userInput = prompt('パスワードを入力してください:');
     
-    if (userInput === 白湯のお湯割り！！) {
+    if (userInput === correctPassword) {
         setActionAndTriggerFileUpload(action);
     } else {
         alert('パスワードが正しくありません。');
