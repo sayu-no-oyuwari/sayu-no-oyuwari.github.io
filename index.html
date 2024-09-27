@@ -892,21 +892,22 @@ const correctPassword = "白湯のお湯割り！！";
 // 現在のアクションを記憶する変数
 let Sayu_Fan_Action = ''; 
 
-// パスワードを入力させて、正しければアクションを設定してファイル選択をトリガーする
-function promptPasswordAndTriggerAction(action) {
-    const userInput = prompt('パスワードを入力してください:');
-    
-    if (userInput === correctPassword) {
-        setActionAndTriggerFileUpload(action);
-    } else {
-        alert('パスワードが正しくありません。');
-    }
-}
-
 // ボタンが押されたときに、アクションを設定してファイル選択をトリガーする
 function setActionAndTriggerFileUpload(action) {
     Sayu_Fan_Action = action;  // 押されたボタンに対応するアクションを保存
     document.getElementById('imageUpload').click();  // 非表示のファイル入力をクリックしてファイル選択ダイアログを表示
+}
+
+// パスワード認証後にユーザー操作を経由してファイル選択ダイアログを表示
+function promptPasswordAndTriggerAction(action) {
+    const userInput = prompt('パスワードを入力してください:');
+    
+    if (userInput === correctPassword) {
+        // パスワードが正しい場合のみ、ユーザー操作を経由してファイル選択をトリガー
+        setActionAndTriggerFileUpload(action);
+    } else {
+        alert('パスワードが正しくありません。');
+    }
 }
 
 // ファイルが選択されたら自動的に画像処理を開始する
@@ -916,7 +917,6 @@ document.getElementById('imageUpload').addEventListener('change', function () {
     }
 });
 </script>
-
 
 </body>
 
