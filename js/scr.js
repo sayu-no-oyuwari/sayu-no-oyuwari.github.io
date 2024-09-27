@@ -36,12 +36,28 @@
 
 
 
-let currentAction = '';  // 現在のアクションを記憶する変数
+// パスワードチェック用の変数
+const correctPassword = "白湯のお湯割り！！";
+
+// 現在のアクションを記憶する変数
+let currentAction = ''; 
 
 // ボタンが押されたときに、アクションを設定してファイル選択をトリガーする
 function setActionAndTriggerFileUpload(action) {
-    currentAction = action;  // 押されたボタンに対応するアクションを保存
+    currentAction = action;  // 押されたボタンの名前（アクション）を保存
     document.getElementById('imageUpload').click();  // 非表示のファイル入力をクリックしてファイル選択ダイアログを表示
+}
+
+// パスワード認証後にユーザー操作を経由してファイル選択ダイアログを表示
+function promptPasswordAndTriggerAction(action) {
+    const userInput = prompt('パスワードを入力してください:');
+    
+    if (userInput === correctPassword) {
+        // パスワードが正しい場合のみ、ユーザー操作を経由してファイル選択をトリガー
+        setActionAndTriggerFileUpload(action);
+    } else {
+        alert('パスワードが正しくありません。');
+    }
 }
 
 // ファイルが選択されたら自動的に画像処理を開始する
@@ -50,7 +66,6 @@ document.getElementById('imageUpload').addEventListener('change', function () {
         processImage(currentAction);  // 保存しておいたアクションを使って処理を実行
     }
 });
-
 
 function processImage(action) {
     const fileInput = document.getElementById('imageUpload');
@@ -144,7 +159,4 @@ function editAndDownloadSVG(base64data, action, mimeType, imgWidth, imgHeight) {
             console.error('エラーが発生しました:', error);
             alert('SVGファイルの読み込みまたは編集中にエラーが発生しました。');
         });
-        
-
-
 }
