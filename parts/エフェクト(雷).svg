@@ -2,9 +2,12 @@
 
 <defs>
 
-<g id="画像">
+<g id="webp">
 	<image x="0" y="0"  href=""/>
 </g>
+<use id="画像" href="#webp" xlink:href="#webp" x="0" y="0">
+</use>
+
 
 
 
