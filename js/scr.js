@@ -38,14 +38,13 @@
 
 // パスワードをチェックするための変数
 const correctPassword = "白湯のお湯割り！！"; // 正しいパスワードを設定
-const flag = true;
 
 // 現在のアクションを記憶する変数
 let currentAction = '';
 
 
 // パスワードが必要なボタンの処理
-function FanboxPass(action) {
+function FanboxPass{
     const userInput = prompt('パスワードを入力してください:');
 
     if (userInput === correctPassword) {
@@ -57,12 +56,11 @@ function FanboxPass(action) {
 });
 
 
-
-
-//ファイル選択
+// ボタンが押されたときに、アクションを設定してファイル選択をトリガーする
 function setActionAndTriggerFileUpload(action) {
     currentAction = action;  // 押されたボタンの名前（アクション）を保存
     document.getElementById('imageUpload').click();  // 非表示のファイル入力をクリックしてファイル選択ダイアログを表示
+    processImage();
 }
 
 
