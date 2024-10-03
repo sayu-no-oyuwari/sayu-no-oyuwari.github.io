@@ -36,37 +36,38 @@
 
 
 
-// パスワードチェック用の変数
-const correctPassword = "白湯のお湯割り！！";
+// パスワードをチェックするための変数
+const correctPassword = "白湯のお湯割り！！"; // 正しいパスワードを設定
+const flag = true;
 
 // 現在のアクションを記憶する変数
-let currentAction = ''; 
+let currentAction = '';
 
-// ボタンが押されたときに、アクションを設定してファイル選択をトリガーする
-function setActionAndTriggerFileUpload(action) {
-    currentAction = action;  // 押されたボタンの名前（アクション）を保存
-    document.getElementById('imageUpload').click();  // 非表示のファイル入力をクリックしてファイル選択ダイアログを表示
-}
 
-document.getElementById('yourButtonId').addEventListener('click', function() {
+// パスワードが必要なボタンの処理
+function FanboxPass(action) {
     const userInput = prompt('パスワードを入力してください:');
 
     if (userInput === correctPassword) {
-        // パスワードが正しければファイル選択を表示
-        document.getElementById('imageUpload').click();
+        setActionAndTriggerFileUpload();
     } else {
         alert('パスワードが正しくありません。');
     }
 
 });
 
-// ファイルが選択されたら自動的に画像処理を開始する
-document.getElementById('imageUpload').addEventListener('change', function () {
-    if (this.files.length > 0) {
-        processImage(currentAction);  // 保存しておいたアクションを使って処理を実行
-    }
-});
 
+
+
+//ファイル選択
+function setActionAndTriggerFileUpload(action) {
+    currentAction = action;  // 押されたボタンの名前（アクション）を保存
+    document.getElementById('imageUpload').click();  // 非表示のファイル入力をクリックしてファイル選択ダイアログを表示
+}
+
+
+
+//画像関連
 function processImage(action) {
     const fileInput = document.getElementById('imageUpload');
     const file = fileInput.files[0];
