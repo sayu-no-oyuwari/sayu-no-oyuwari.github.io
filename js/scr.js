@@ -47,16 +47,13 @@ function FanboxPass(action) {
     const userInput = prompt('パスワードを入力してください:');
 
     if (userInput === correctPassword) {
-        // パスワードが正しい場合のみ、次のイベントループでアクションを実行
-        setTimeout(() => {
-            currentAction = action;  // 押されたボタンの名前（アクション）を保存
-            document.getElementById('imageUpload').click();  // 非表示のファイル入力をクリックしてファイル選択ダイアログを表示
-        }, 0);
+        // パスワードが正しい場合のみ、ファイル選択ダイアログを開く
+        currentAction = action;  // 押されたボタンの名前（アクション）を保存
+        document.getElementById('imageUpload').click();  // 非表示のファイル入力をクリックしてファイル選択ダイアログを表示
     } else {
         alert('パスワードが正しくありません。');
     }
 }
-
 
 // ボタンが押されたときに、アクションを設定してファイル選択をトリガーする
 function setActionAndTriggerFileUpload(action) {
