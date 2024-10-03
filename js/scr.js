@@ -42,27 +42,33 @@ const correctPassword = "白湯のお湯割り！！"; // 正しいパスワー�
 // 現在のアクションを記憶する変数
 let currentAction = '';
 
-
-// パスワードが必要なボタンの処理
-function FanboxPass{
+//パスワード確認
+function FanboxPass(action) {
     const userInput = prompt('パスワードを入力してください:');
 
     if (userInput === correctPassword) {
-        setActionAndTriggerFileUpload();
+        // パスワードが正しい場合のみ、次のイベントループでアクションを実行
+        setTimeout(() => {
+            setActionAndTriggerFileUpload(action);
+        }, 0);
     } else {
         alert('パスワードが正しくありません。');
     }
-
-});
+}
 
 
 // ボタンが押されたときに、アクションを設定してファイル選択をトリガーする
 function setActionAndTriggerFileUpload(action) {
     currentAction = action;  // 押されたボタンの名前（アクション）を保存
     document.getElementById('imageUpload').click();  // 非表示のファイル入力をクリックしてファイル選択ダイアログを表示
-    processImage();
 }
 
+// ファイルが選択されたら自動的に画像処理を開始する
+document.getElementById('imageUpload').addEventListener('change', function () {
+    if (this.files.length > 0) {
+        processImage(currentAction);  // 保存しておいたアクションを使って処理を実行
+    }
+});
 
 
 //画像関連
