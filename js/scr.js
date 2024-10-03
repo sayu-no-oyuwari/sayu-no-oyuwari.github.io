@@ -58,6 +58,8 @@ document.getElementById('yourButtonId').addEventListener('click', function() {
         alert('パスワードが正しくありません。');
     }
 
+});
+
 // ファイルが選択されたら自動的に画像処理を開始する
 document.getElementById('imageUpload').addEventListener('change', function () {
     if (this.files.length > 0) {
