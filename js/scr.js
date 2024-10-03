@@ -48,18 +48,15 @@ function setActionAndTriggerFileUpload(action) {
     document.getElementById('imageUpload').click();  // 非表示のファイル入力をクリックしてファイル選択ダイアログを表示
 }
 
-function promptPasswordAndTriggerAction(action) {
+document.getElementById('yourButtonId').addEventListener('click', function() {
     const userInput = prompt('パスワードを入力してください:');
 
     if (userInput === correctPassword) {
-        // パスワードが正しい場合のみ、次のイベントループでアクションを実行
-        setTimeout(() => {
-            setActionAndTriggerFileUpload(action);
-        }, 0);
+        // パスワードが正しければファイル選択を表示
+        document.getElementById('imageUpload').click();
     } else {
         alert('パスワードが正しくありません。');
     }
-}
 
 // ファイルが選択されたら自動的に画像処理を開始する
 document.getElementById('imageUpload').addEventListener('change', function () {
