@@ -1,0 +1,95 @@
+<svg width="1440" height="1440" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" overflow="hidden">
+
+<defs>
+
+<g id="画像">
+	<image x="0" y="0"  href=""/>
+</g>
+
+<!--文字設定-->
+
+<text id="System_txt1" class="Txt1"  x="0" y="0" fill="#000000" stroke="#FFFFFF" stroke-width="4">
+	ドキ
+</text>
+
+
+<g  id="webp">
+
+  <use href="#画像" xlink:href="#画像" x="0" y="0">
+    <animateTransform 
+      attributeName="transform"
+      type="translate"
+      values="0,0; 10,0; -10,10; 10,5; -10,15; 5,1; -5,2; 3,0; -3,0; 0,0"
+      dur="0.7s"
+      repeatCount="indefinite"
+    />
+  </use>
+
+</g>
+
+<style type="text/css">
+    @font-face {
+      font-family: 'mochiy-pop-p-one-regular';
+      src: url(data:font/woff2;base64,d09GRgABAAAAAAVAAAsAAAAACOwAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABPUy8yAAABCAAAAEsAAABgVRzGzGNtYXAAAAFUAAAAMAAAADwwwTEzZ2FzcAAAAYQAAAAIAAAACAAAAAtnbHlmAAABjAAAAUgAAAFQm6kjfGhlYWQAAALUAAAANgAAADYbXeFiaGhlYQAAAwwAAAAgAAAAJAhNAy5obXR4AAADLAAAABAAAAAQDJ0CpGxvY2EAAAM8AAAAEwAAABQAAAJAbWF4cAAAA1AAAAAdAAAAIAARAK1uYW1lAAADcAAAAbsAAAV8Hsj13nBvc3QAAAUsAAAAEwAAACD/nwAyeNpjYGG+zziBgZWBgamLKYKBgcEbQjPGMRgx6jCgAkYGFgTHLcQlmMGBQcHgJHPB/w4GBpYORgUHIaAaIGCSZ7oLpBQYGAAH5wr7AHjaY2BgYGRgBmIGBh4GFgYDIM0BhExAWsFgrcHJ//8RrP8Pz4eetwKrBQMABZcMTgABAAH//wAKeNpjYGScxMjElMd4j4GZgYFRUFGQcRLDHUYmhjv/VRgYGWz+72NuZbZmMGBgMFc3MjNXU2djY1c3AzLU1M1FRcTEzcyMjcWVldjYQUxzcaCsmJg4uxpIXYOA0ZpkSeGouSZyZvMi2DiYFrOzJ21xlGDmtlqXKCodNk1f2LjJXcJQfLa0pVTW3qlz+LkjIrgleabxSnJr+ioLsMp7aXJxT+fmCovgluCeyiPGbZ+p5Kzd4MMryMAAdO2D/4eZ25ktGTgYlBl0gG7XY1I3B1rOqKZmamLHBHaLHJM4O1CYDeRSmDxzIJeqEocNn57430wODg5eIc5V3KLsUVsW2cea9051ZuLiZrTgVJBldeVSEWFawqGqza8naiL454lpm1vgmuXTrASNegKl/eON+wwjvaSMjSJX+jId5tQzEVAQtxFlYAAAKrFCswABAAAAAQAAXaYN718PPPUAAQPoAAAAANtdQrgAAAAA3ShazQA8/74DhwM7AAAABgACAAEAAAAAeNpjYGRgYOn494CBgfkFgw1DInM7A1AEBbAAAHcIBIMD6AGIAOUAAAPoADwD6ADgeNpjYAADGSjewcDAGAAABmYBQgB42mNgZGBgYGEwZGBmqGJgZwDxEICJgREAEFgAvwAAAHja7ZMxS8NAFMff5apFRUFw6iCHU0VoQicRFxE7KZRa6tykaZKivZC7DF0dHBz0Czg61K/h5/CTCIL/XN/SQQdxEcwR7vfevfe7JFyISIk7ErS4+rgXLGgT0YI9qtOQWSKfMtfAJfMK+JZ5FfzIXAc/gQVtOP8Lc+X/YIZfrDPDL7aZ4Re7zPCLA2b4xSEz/OIMXaK2Bv9c9JgFNcQ7s0db3g6zpIa3x1wDHzOvgAfMq+CcuQ6+d7xd+b1nZvjlOTP8cswMv7TM8MsHZvjlnBl++coMv3w71fmsyJLUqnbQDlQ/jdWFjtJs1tW56hZ6EkdWnZQ21YVRzdTa3Bz5fpLZtAxbkb7xx3pqR0NT+ou2XOf7V3F4WYYmth2s9eKkvB4WS7mlYBAXJtNT1W4FQfB12Z95UDolTTnNqKCMEpxYS4raFLhb4RymFGO+QFUEzlDZdR0KcwGaYD1yXSc44xY1GnmDuOlsFrWGjsjHSNBfVZQUUgtdmm6QHWOeIj/Cv2Ow5i/tlrvd9ukK+4R06XoN2FKH+3qIEuSv0V98U/f1ygBR9cyZi6v3b+Htq/ET2/8X/eUv+gljFw/aAHjaY2BmAIP/cxiMGLAAACqDAdEA) format('woff2');
+    }
+
+.Txt1 {
+	font-family: 'mochiy-pop-p-one-regular', serif;
+	font-size: 190px;
+	font-weight: 400;
+	text-anchor: middle; /* テキストの開始位置 */
+	transform: rotate(-5deg); /* -5度斜めにする */
+}
+
+</style>
+
+
+ 
+<use id="ドキ1" href="#System_txt1" xlink:href="#System_txt1" x="0" y="0">
+<animateTransform attributeName="transform" type="scale" begin="0s" dur="0.9s" repeatCount="indefinite" 
+    values="1,1; 1.1,1.1; 1,1; 1.3,1.3; 1,1" 
+    keyTimes="0; 0.25; 0.5; 0.75; 1"/>
+</use>
+
+<use id="ドキ2" href="#System_txt1" xlink:href="#System_txt1" x="0" y="0">
+<animateTransform attributeName="transform" type="scale" begin="0s" dur="0.9s" repeatCount="indefinite" 
+    values="1,1; 1.3,1.3; 1,1; 1.1,1.1; 1,1" 
+    keyTimes="0; 0.25; 0.5; 0.75; 1"/>
+</use>
+
+</defs>
+
+<use href="#虹色" fill="#E50011"  x="720" y="720" />
+
+<use href="#haikei" x="720" y="720"/>
+
+<use href="#webp" xlink:href="#webp" x="720" y="720">
+</use>
+
+
+<use href="#webp" xlink:href="#webp" x="720" y="720" filter="url(#glow)">
+</use>
+
+
+<g>
+
+
+<use href="#ドキ2" xlink:href="#ドキ2" x="500" y="430" filter="url(#glow)" transform="rotate(-10 500 430)">
+    />
+</use>
+
+<use href="#ドキ1" xlink:href="#ドキ1" x="250" y="260" filter="url(#glow)" transform="rotate(-10 250 260)">
+</use>
+
+    <animateTransform 
+      attributeName="transform"
+      type="translate"
+      values="0,0; 3,5; -3,-5; 1,5; -1,-5; 5,1; -5,-2; 3,0; -3,0; 0,0"
+      dur="0.7s"
+      repeatCount="indefinite"
+    />
+    
+    
+
+</g>
+</svg>
