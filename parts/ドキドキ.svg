@@ -16,13 +16,7 @@
 <g  id="webp">
 
   <use href="#画像" xlink:href="#画像" x="0" y="0">
-    <animateTransform 
-      attributeName="transform"
-      type="translate"
-      values="0,0; 10,0; -10,10; 10,5; -10,15; 5,1; -5,2; 3,0; -3,0; 0,0"
-      dur="0.7s"
-      repeatCount="indefinite"
-    />
+
   </use>
 
 </g>
