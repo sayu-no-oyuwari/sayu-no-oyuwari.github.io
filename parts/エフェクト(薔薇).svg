@@ -1,0 +1,270 @@
+<svg viewBox="0 0 1440 1440" width="1440" height="1440" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" overflow="hidden">
+
+<defs>
+
+<g id="画像">
+	<image x="-720" y="-720"  href="data:image/webp;base64,"/>
+</g>
+
+  <style type="text/css">
+    .sayu {fill:url(#Sakura);}
+    .kaben1 {
+      /* 回転の基準をオブジェクトの中央に */
+      transform-box:fill-box;
+      transform-origin:center;
+      animation:hana1 2s linear infinite;
+      animation-delay: calc(0.5s * var(--delay)); /* 遅延をランダム化 */
+    }
+
+    @keyframes hana1 {
+      to {
+        transform:rotateZ(1turn) rotateX(1turn) rotateY(0.5turn);
+      }
+    }
+    /* 花弁が曲がるアニメーション */
+    @keyframes kabenBend {
+      0% {
+        transform: scale(1) skewX(0deg) skewY(0deg);
+      }
+      50% {
+        transform: scale(1.2, 0.8) skewX(5deg) skewY(3deg);
+      }
+      100% {
+        transform: scale(1) skewX(0eg) skewY(0deg);
+      }
+    }
+
+
+    .kaben2 {
+      /* 回転の基準をオブジェクトの中央に */
+      transform-box:fill-box;
+      transform-origin:center;
+      animation:hana1 3s linear infinite;
+      animation-delay: calc(0.5s * var(--delay)); /* 遅延をランダム化 */
+    }
+    @keyframes hana2 {
+      0% {
+        transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+      }
+      25% {
+        transform: rotateZ(90deg) rotateX(45deg) rotateY(22.5deg);
+      }
+      50% {
+        transform: rotateZ(180deg) rotateX(90deg) rotateY(45deg);
+      }
+      75% {
+        transform: rotateZ(270deg) rotateX(135deg) rotateY(67.5deg);
+      }
+      100% {
+        transform: rotateZ(360deg) rotateX(180deg) rotateY(90deg);
+      }
+    }
+    }
+
+    /* 花弁が曲がるアニメーション */
+    @keyframes kabenBend {
+      0% {
+        transform: scale(1) skewX(0deg) skewY(0deg);
+      }
+      50% {
+        transform: scale(1.2, 0.8) skewX(5deg) skewY(3deg);
+      }
+      100% {
+        transform: scale(1) skewX(0eg) skewY(0deg);
+      }
+    }
+    
+    .kaben3 {
+      /* 回転の基準をオブジェクトの中央に */
+      transform-box:fill-box;
+      transform-origin:center;
+      animation:hana1 2.5s linear infinite;
+      animation-delay: calc(0.5s * var(--delay)); /* 遅延をランダム化 */
+    }
+    @keyframes hana2 {
+      0% {
+        transform: rotateZ(180deg) rotateX(180deg) rotateY(180deg);
+      }
+      25% {
+        transform: rotateZ(90deg) rotateX(45deg) rotateY(22.5deg);
+      }
+      50% {
+        transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+      }
+      75% {
+        transform: rotateZ(270deg) rotateX(135deg) rotateY(67.5deg);
+      }
+      100% {
+        transform: rotateZ(180deg) rotateX(180deg) rotateY(180deg);
+      }
+    }
+    }
+
+    /* 花弁が曲がるアニメーション */
+    @keyframes kabenBend {
+      0% {
+        transform: scale(1) skewX(0deg) skewY(0deg);
+      }
+      50% {
+        transform: scale(1.2, 0.8) skewX(5deg) skewY(3deg);
+      }
+      100% {
+        transform: scale(1) skewX(0eg) skewY(0deg);
+      }
+    }
+
+  </style>
+
+    <!-- 線形グラデーション -->
+    <linearGradient id="grad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:black;stop-opacity:1" />
+      <stop offset="90%" style="stop-color:white;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:white;stop-opacity:1" />
+    </linearGradient>
+    
+  <linearGradient id="Sakura" x1="0%" y1="0%" x2="0%" y2="100%" gradientUnits="objectBoundingBox">
+    <stop offset="0" style="stop-color:#C90040"/>
+    <stop offset="0.8" style="stop-color:#DA4E93"/>
+    <stop offset="1" style="stop-color:#F0ECE2"/>
+  </linearGradient>
+
+<filter id="blurFilter_S" x="0" y="0">
+	<feGaussianBlur in="SourceGraphic" stdDeviation="2.5" />
+</filter>
+
+  <!-- ガイドラインのパス（花弁がこのパスに沿って動きます）-->
+  <path id="motion1" d="M 720 720 L 360 500 L 10 20 L -100 -100" stroke="black" fill="none"/> 
+  <path id="motion2" d="M 720 720 L 1080 940 L 1430 1420 L 1540 1540" stroke="black" fill="none"/> 
+  <path id="motion3" d="M 720 720 L 800 300 L 1200 50 L 1400 -200" stroke="black" fill="none"/> 
+  <path id="motion4" d="M 720 720 L 500 1000 L 200 1400 L 0 1600" stroke="black" fill="none"/> 
+  <path id="motion5" d="M 720 720 L 1000 500 L 1200 200 L 1500 50" stroke="black" fill="none"/> 
+  <path id="motion6" d="M 720 720 L 200 300 L -200 -100 L -400 -400" stroke="black" fill="none"/> 
+  <path id="motion7" d="M 720 720 L 600 900 L 500 1200 L 300 1500" stroke="black" fill="none"/> 
+  <path id="motion8" d="M 720 720 L 1400 1200 L 1600 1500 L 1800 1800" stroke="black" fill="none"/> 
+  <path id="motion9" d="M 720 720 L 200 400 L 0 100 L -300 -100" stroke="black" fill="none"/>
+
+
+<path id="花弁1" class="sayu kaben1" d="M103.9,57.9c0,30.6-39.9,64.3-39.9,64.3S24.1,88.5,24.1,57.9S64,7.2,64,7.2S103.9,27.3,103.9,57.9z"/>
+<path id="花弁2" class="sayu kaben2" d="M 30,-50 C 30,-33.4 9.19,-9.84 0,0 -9.73,-9.57 -30,-33.4 -30,-50 -30,-66.6 -16.6,-80 0,-80 16.6,-80 30,-66.6 30,-50 Z"/>
+<path id="花弁3" class="sayu kaben3"  d="M 75,40
+                       C 75,10 90,0 100,20
+                       C 110,0 125,10 125,40
+                       C 125,60 115,80 100,100
+                       C 85,80 75,60 75,40 Z"/>
+
+<!-- キラキラのためのフィルタ -->
+
+    <!-- グロー効果 -->
+    <filter id="glow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blurred" />
+      <feMerge>
+        <feMergeNode in="blurred" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  
+    <path id="diamond1" 
+             d="M 0,-60 
+             C 10,-20 10,-10 30,0 
+             C 10,10 10,20 0,60
+             C -10,20 -10,10 -30,0
+             C -10,-10 -10,-20 0,-60"  fill="#F2B922" filter="url(#glow)">
+      <animateTransform attributeName="transform" type="scale" values="0.2;1.2;0.2" dur="1s" repeatCount="indefinite" />
+    </path>
+
+    <path id="diamond2" 
+             d="M 0,-60 
+             C 10,-20 10,-10 30,0 
+             C 10,10 10,20 0,60
+             C -10,20 -10,10 -30,0
+             C -10,-10 -10,-20 0,-60"  fill="#F2B922" filter="url(#glow)">
+      <animateTransform attributeName="transform" type="scale" values="0.8;0.1;0.8" dur="1s" repeatCount="indefinite" />
+    </path>
+
+</defs>
+
+<g fill-opacity="0.2">
+  <!-- useで複数の四角形を配置 -->
+  <use href="#diamond1" x="300" y="200" />
+  <use href="#diamond2" x="350" y="250" />
+  <use href="#diamond1" x="850" y="1100" />
+  <use href="#diamond2" x="900" y="1050" />
+  <use href="#diamond1" x="1100" y="150"/>
+  <use href="#diamond2" x="1150" y="200" />
+</g>
+
+<g id="hana_anime">
+
+  <!-- 花弁1-->
+  <use href="#花弁1" xlink:href="#花弁1">
+    <animateMotion repeatCount="indefinite" dur="6s">
+      <mpath href="#motion1"/>
+    </animateMotion>
+  </use>
+  
+  <!-- 花弁2-->
+  <use href="#花弁2" xlink:href="#花弁2">
+    <animateMotion repeatCount="indefinite" dur="7s">
+      <mpath href="#motion2"/>
+    </animateMotion>
+  </use>
+
+  <!-- 花弁3-->
+  <use href="#花弁3" xlink:href="#花弁3">
+    <animateMotion repeatCount="indefinite" dur="5s">
+      <mpath href="#motion3"/>
+    </animateMotion>
+  </use>
+  
+  <!-- 花弁4-->
+  <use href="#花弁2" xlink:href="#花弁2">
+    <animateMotion repeatCount="indefinite" dur="6.5s">
+      <mpath href="#motion4"/>
+    </animateMotion>
+  </use>
+
+  <!-- 花弁5-->
+  <use href="#花弁1" xlink:href="#花弁1">
+    <animateMotion repeatCount="indefinite" dur="5.5s">
+      <mpath href="#motion5"/>
+    </animateMotion>
+  </use>
+
+  <!-- 花弁6-->
+  <use href="#花弁3" xlink:href="#花弁3">
+    <animateMotion repeatCount="indefinite" dur="7.5s">
+      <mpath href="#motion6"/>
+    </animateMotion>
+  </use>
+  
+  <!-- 花弁7-->
+  <use href="#花弁2" xlink:href="#花弁2">
+    <animateMotion repeatCount="indefinite" dur="6.5s">
+      <mpath href="#motion7"/>
+    </animateMotion>
+  </use>
+
+  <!-- 花弁8-->
+  <use href="#花弁1" xlink:href="#花弁1">
+    <animateMotion repeatCount="indefinite" dur="5.5s">
+      <mpath href="#motion8"/>
+    </animateMotion>
+  </use>
+
+  <!-- 花弁9-->
+  <use href="#花弁3" xlink:href="#花弁3">
+    <animateMotion repeatCount="indefinite" dur="7.5s">
+      <mpath href="#motion9"/>
+    </animateMotion>
+  </use>
+
+</g>
+
+
+<use href="#画像" xlink:href="#画像" x="720" y="720">
+</use>
+
+  <use href="#hana_anime" xlink:href="#hana_anime" filter="url(#blurFilter_S)" fill-opacity="0.2">
+  </use>
+
+</svg>
