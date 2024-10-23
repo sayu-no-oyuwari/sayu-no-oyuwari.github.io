@@ -65,6 +65,7 @@ function setActionAndTriggerFileUpload(action) {
 document.getElementById('imageUpload').addEventListener('change', function () {
     if (this.files.length > 0) {
         processImage(currentAction);  // 保存しておいたアクションを使って処理を実行
+        this.value = '';  // ファイル選択後に値をリセット
     }
 });
 
