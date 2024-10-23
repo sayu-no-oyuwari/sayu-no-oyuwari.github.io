@@ -131,11 +131,11 @@
     <animate attributeName="opacity" values="0.2;0.7;0.2" dur="2s" repeatCount="indefinite" begin="1s" />
   </path>
 
-  <path d="M 141,198 94.8,90.8 62.3,199 90.4,200 96.5,152 106,197 Z" filter="url(#glow)" opacity="0.3">
+  <path d="M 141,198 94.8,90.8 62.3,199 90.4,200 96.5,152 106,197 Z" filter="url(#glow)" opacity="0.8">
     <animate attributeName="opacity" values="0.8;0.5;0.8" dur="3s" repeatCount="indefinite" begin="1.5s" />
   </path>
 
-  <path d="M -12.5,99.6 90.1,90.1 10,204 -35,164 48,110 -23.7,125 Z" filter="url(#glow)" opacity="0.2">
+  <path d="M -12.5,99.6 90.1,90.1 10,204 -35,164 48,110 -23.7,125 Z" filter="url(#glow)" opacity="0.9">
     <animate attributeName="opacity" values="0.9;0.4;0.9" dur="5s" repeatCount="indefinite" begin="2s" />
   </path>
 
