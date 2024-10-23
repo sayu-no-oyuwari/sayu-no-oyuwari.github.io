@@ -20,7 +20,7 @@
 
 .Txt1 {
 	font-family: 'Pacifico', serif;
-	font-size: 200px;
+	font-size: 300px;
 	font-weight: 100;
 	text-anchor: middle; /* テキストの開始位置 */
 }
@@ -47,18 +47,18 @@
     <path id="diamond1" 
              d="M 0,-60 
              C 10,-20 10,-10 30,0 
-             C 10,10 10,20 0,60
+             C 10,10 10,20 0,100
              C -10,20 -10,10 -30,0
-             C -10,-10 -10,-20 0,-60"  fill="#DCD2A9" filter="url(#glow)">
+             C -10,-10 -10,-20 0,-100"  fill="#DCD2A9" filter="url(#glow)">
       <animateTransform attributeName="transform" type="scale" values="0.2;1.2;0.2" dur="1s" repeatCount="indefinite" />
     </path>
 
     <path id="diamond2" 
              d="M 0,-60 
-             C 10,-20 10,-10 30,0 
-             C 10,10 10,20 0,60
-             C -10,20 -10,10 -30,0
-             C -10,-10 -10,-20 0,-60"  fill="#DCD2A9" filter="url(#glow)">
+             C 10,-20 10,-10 50,0 
+             C 10,10 10,20 0,100
+             C -10,20 -10,10 -50,0
+             C -10,-10 -10,-20 0,-100"  fill="#DCD2A9" filter="url(#glow)">
       <animateTransform attributeName="transform" type="scale" values="0.8;0.1;0.8" dur="1s" repeatCount="indefinite" />
     </path>
 
@@ -131,11 +131,11 @@
     <animate attributeName="opacity" values="0.2;0.7;0.2" dur="2s" repeatCount="indefinite" begin="1s" />
   </path>
 
-  <path d="M 141,198 94.8,90.8 62.3,199 90.4,200 96.5,152 106,197 Z" filter="url(#glow)" opacity="0.3">
+  <path d="M 141,198 94.8,90.8 62.3,199 90.4,200 96.5,152 106,197 Z" filter="url(#glow)" opacity="0.8">
     <animate attributeName="opacity" values="0.8;0.5;0.8" dur="3s" repeatCount="indefinite" begin="1.5s" />
   </path>
 
-  <path d="M -12.5,99.6 90.1,90.1 10,204 -35,164 48,110 -23.7,125 Z" filter="url(#glow)" opacity="0.2">
+  <path d="M -12.5,99.6 90.1,90.1 10,204 -35,164 48,110 -23.7,125 Z" filter="url(#glow)" opacity="0.9">
     <animate attributeName="opacity" values="0.9;0.4;0.9" dur="5s" repeatCount="indefinite" begin="2s" />
   </path>
 
@@ -153,10 +153,10 @@
 
 
   <!-- useで複数の四角形を配置 -->
-  <use href="#diamond1" x="350" y="1100" />
-  <use href="#diamond2" x="400" y="1050" />
-  <use href="#diamond1" x="1070" y="1220"/>
-  <use href="#diamond2" x="1100" y="1150" />
+  <use href="#diamond1" x="200" y="1000" />
+  <use href="#diamond2" x="250" y="950" />
+  <use href="#diamond1" x="1250" y="1220"/>
+  <use href="#diamond2" x="1300" y="1150" />
 
 <use href="#System_txt" xlink:href="#System_txt" x="700" y="1220" opacity="1" filter="url(#glow)">
   
