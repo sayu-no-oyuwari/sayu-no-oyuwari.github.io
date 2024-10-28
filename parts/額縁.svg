@@ -35,15 +35,15 @@
     <!-- 斜線パターンの定義 -->
     <pattern id="diagonalStripes" width="1380" height="660" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
     <g>
-    <line x1="0" y1="0" x2="0" y2="660" stroke="rgba(255, 255, 255, 0.2)" stroke-width="100">
+    <line x1="0" y1="0" x2="0" y2="660" stroke="rgba(255, 255, 255, 0.4)" stroke-width="100">
       <animate attributeName="stroke-width" values="100;20;100" dur="10s" repeatCount="indefinite" />
     </line>
 
-    <line x1="100" y1="0" x2="100" y2="660" stroke="rgba(255, 255, 255, 0.2)" stroke-width="100">
+    <line x1="100" y1="0" x2="100" y2="660" stroke="rgba(255, 255, 255, 0.4)" stroke-width="100">
       <animate attributeName="stroke-width" values="100;50;100" dur="10s" repeatCount="indefinite" />
     </line>
 
-    <line x1="200" y1="0" x2="200" y2="660" stroke="rgba(255, 255, 255, 0.2)" stroke-width="100">
+    <line x1="200" y1="0" x2="200" y2="660" stroke="rgba(255, 255, 255, 0.4)" stroke-width="100">
       <animate attributeName="stroke-width" values="100;10;100" dur="10s" repeatCount="indefinite" />
     </line>
     
@@ -93,7 +93,7 @@
   <rect x="30" y="30" width="1380" height="660" fill="url(#diagonalStripes)">
     <!-- 透過度を変更するアニメーション -->
     <animate attributeName="fill-opacity"
-             values="0.2;0.8;0.2"
+             values="0.5;1;0.5"
              dur="10s"
              repeatCount="indefinite" />
   </rect>
