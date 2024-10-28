@@ -75,7 +75,7 @@
     
   <g id="絵">
   <!-- オリジナル表示 -->
-  <rect x="30" y="30" width="1380" height="660" fill="#808080"/>
+  <rect x="30" y="30" width="1380" height="660" fill="##24130D"/>
   
     <use href="#画像" x="720" y="720">
    </use>
