@@ -1,0 +1,108 @@
+<svg width="720" height="1440" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1440">
+  <defs>
+  
+  <g id="画像">
+	<image x="0" y="0"  href=""/>
+  </g>
+  
+    <linearGradient id="縦" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#b8a080; stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#e0d4b0; stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8c7550; stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#e0d4b0; stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b8a080; stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="横" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#b8a080; stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#e0d4b0; stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8c7550; stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#e0d4b0; stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b8a080; stop-opacity:1" />
+    </linearGradient>
+
+    <!-- アンティーク風フィルター -->
+<filter id="IF" x="0%" y="0%" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" result="turbulence"/>
+  <feColorMatrix type="matrix" values="0.9 0 0 0 0
+                                       0 0.85 0 0 0
+                                       0 0 0.7 0 0
+                                       0 0 0 1 0" />
+  <feGaussianBlur in="turbulence" stdDeviation="1.5" result="blurred" />
+  <feBlend in="SourceGraphic" in2="blurred" mode="multiply" />
+</filter>
+
+    <!-- 斜線パターンの定義 -->
+    <pattern id="diagonalStripes" width="1160" height="1380" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <g>
+    <line x1="100" y1="0" x2="100" y2="1380" stroke="rgba(255, 255, 255, 0.4)" stroke-width="100">
+      <animate attributeName="stroke-width" values="100;20;100" dur="10s" repeatCount="indefinite" />
+    </line>
+
+    <line x1="200" y1="0" x2="200" y2="1380" stroke="rgba(255, 255, 255, 0.4)" stroke-width="100">
+      <animate attributeName="stroke-width" values="100;50;100" dur="10s" repeatCount="indefinite" />
+    </line>
+
+    <line x1="300" y1="0" x2="300" y2="1380" stroke="rgba(255, 255, 255, 0.4)" stroke-width="100">
+      <animate attributeName="stroke-width" values="100;10;100" dur="10s" repeatCount="indefinite" />
+    </line>
+    
+    </g>
+    </pattern>
+  
+    <g id="gaku" >
+    
+     <g fill="url(#横)" >
+      <rect
+         width="20"
+         height="720"
+         x="0"
+         y="0"  filter="url(#IF)"/>
+      <rect
+         width="20"
+         height="720"
+         x="10"
+         y="0"  filter="url(#IF)"/>
+     </g>
+     
+     <g fill="url(#縦)" stroke="#8c7550">
+      <path
+         d="M 0,0 H 361 V 20 H 20 C 20,20 15,17 10,15 6,10 0,0 0,0 Z"  filter="url(#IF)"/>
+      <path
+         d="M 30,30 H 361 V 20 H 20 C 26,23 29,25 30,30 Z"  filter="url(#IF)"/>
+     </g>
+    </g>
+    
+  <g id="絵">
+  <!-- オリジナル表示 -->
+  <rect x="30" y="30" width="660" height="1380" fill="##24130D"/>
+  
+    <use href="#画像" x="360" y="720">
+   </use>
+
+  
+  <rect x="30" y="30" width="660" height="1380" fill="None" stroke="#F4ECD0" stroke-width="10"/>
+
+  <use href="#gaku" />
+  <!-- 水平反転した表示 -->
+  <use href="#gaku" x="-720" transform="scale(-1, 1)" />
+  <use href="#gaku" y="-1440" transform="scale(1, -1)" />
+  <use href="#gaku" x="-720" y="-1440" transform="scale(-1, -1)" />
+  
+  <!-- ガラスの光沢効果を持つ四角形 -->
+  <rect x="30" y="30" width="660" height="1380" fill="url(#diagonalStripes)">
+    <!-- 透過度を変更するアニメーション -->
+    <animate attributeName="fill-opacity"
+             values="0.5;1;0.5"
+             dur="10s"
+             repeatCount="indefinite" />
+  </rect>
+  
+
+</g>
+   
+  </defs>
+
+  
+  <use y="0" href="#絵" />
+</svg>
